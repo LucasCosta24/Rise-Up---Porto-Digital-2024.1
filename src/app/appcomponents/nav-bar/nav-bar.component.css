@@ -6,14 +6,15 @@
   }
 
 .header {
-    position: static;
+    position: sticky;
+    background-color: white;
     top: 0;
     left: 0;
     padding: auto;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    margin: auto;
+    z-index: 100;
     display: flex;
     border-bottom: solid rgb(50, 243, 243);
 }
@@ -23,7 +24,9 @@
 }
 
 .title {
+    font-size: 30px;
     padding-left: 100px;
+    font-weight: 500;
 }
 
 

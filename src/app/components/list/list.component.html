@@ -1,8 +1,105 @@
-<ul role="list" class="list">
-    <li>Shiba Inu</li>
-    <li>Akita Ken</li>
-    <li>Hokkaidō Ken</li>
-    <li>Kai Ken</li>
-    <li>Kishū Ken</li>
-    <li>Shikoku Ken</li>    
-</ul>
+<div class="app-component-viewer">
+<div class="content">
+    <h1 class="app-title">Lista HTML</h1>
+    <div>
+        Em HTML, a tag <code class="out-code">&lt;ul&gt;</code> representa uma lista não ordenada. 
+        Ela é utilizada para criar uma lista de itens onde a ordem não possui relevância específica. 
+        Cada item dentro da lista não ordenada é definido utilizando a tag <code class="out-code">&lt;li&gt;</code> (item da lista).
+    </div>
+</div>
+
+<span class="container">
+    <ul role="list" class="list">
+            <span>
+                <div class="ul_title">Lista simples</div>
+            </span>
+        <span>
+            <li class="li">Item 1</li>
+        </span>
+        <span>
+           <li class="li">Item 2</li> 
+        </span>
+        <span>
+            <li class="li">Item 3</li>
+        </span> 
+    </ul>
+</span>
+
+<div class="content">
+<p>
+    Por padrão, os navegadores da web exibirão listas não ordenadas com marcadores (geralmente círculos, quadrados ou discos).
+    É possível   estilizar esses marcadores usando CSS se desejar uma aparência diferente.</p>
+</div>
+
+<div class="content">
+<div class="title"> Lista Simples </div>
+</div>
+
+<span class="container">
+    <code class="language-html">
+        <span class="html-codigo">
+            <span>
+                &lt;<span>ul role="list" class="list"</span>&gt;
+                <br>
+            </span>
+                &lt;<span>li class="li">Item 1</span>&lt;<span>/li</span>&gt;
+                <br>
+                &lt;<span>li class="li">Item 2</span>&lt;<span>/li</span>&gt;
+                <br>
+                &lt;<span>li class="li">Item 3</span>&lt;<span>/li</span>&gt;
+        </span>
+    </code>
+</span>
+
+<div class="content">
+<p>
+    Se for necessário inserir apenas uma linha individual de texto lista,
+    o texto pode ser inserido diretamente no elemento <code class="out-code">&lt;ul&gt;</code>.
+</p>
+<div class="title"> Estilização de Listas </div>
+
+<p>Listas podem ser ter diferentes estilos como ordenadas por números decimais, romanos, simbolos
+    e etc. Exemplo de lista com estilo de números decimais:
+</p>
+
+</div>
+
+<span class="container">
+    <ul role="list" class="ordenada-list">
+            <span>
+                <div class="ul_title">Lista ordenada</div>
+            </span>
+        <span>
+            <li class="li">Item 1</li>
+        </span>
+        <span>
+           <li class="li">Item 2</li> 
+        </span>
+        <span>
+            <li class="li">Item 3</li>
+        </span> 
+    </ul>
+</span>
+<br>
+<span class="container">
+    <div class="title-codigo">CSS</div>
+    <span class="css-codigo">
+        <code>
+            .list&#123; 
+            <br>
+            list-style: decimal;
+            <br>
+            &#125;
+        </code>
+    </span>
+</span>
+<div class="content">
+    <p>As listas podem ser apresentadas de diferentes formas a partir desse princípio, outros exemplos:</p>
+    <br>
+    <p><code class="out-code">list-style: none;</code> Estiliza a lista sem símbolos.</p>
+    <p><code class="out-code">list-style: square;</code> Estiliza a lista por símbolos em formato de quadrado.</p>
+    <p><code class="out-code">list-style: circle;</code> Estiliza a lista por símbolos em formato circular.</p>
+    <p><code class="out-code">list-style: upper-roman;</code> Estiliza a lista por símbolos em algarismo romano.</p>
+    <p><code class="out-code">list-style: url;</code> Estiliza a lista por símbolo externo inserido via <code>url()</code>.</p>
+</div>
+</div>

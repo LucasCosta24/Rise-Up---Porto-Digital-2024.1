@@ -2,18 +2,35 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     position: fixed;
     height: 100%;
+    z-index: 1;
     overflow: auto;
     border-right: solid rgb(50, 243, 243);
   }
   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
   /* Sidebar links */
   .sidebar button {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
-    width: 95%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    background-color: #ffffff;
   }
+
+  .sidebar button:hover {
+    background-color: rgb(50, 243, 243);
+    cursor: pointer;
+  }
+
