@@ -7,6 +7,8 @@ import { TableComponent } from './components/table/table.component';
 import { NavBarComponent } from './appcomponents/nav-bar/nav-bar.component';
 import { AppRoutingModule } from './app.routes';
 import { SideBarComponent } from './appcomponents/side-bar/side-bar.component';
+import { InputbuttonComponent } from './components/inputbutton/inputbutton.component';
+import { InputTextComponent } from './components/inputtext/inputtext.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +17,9 @@ import { SideBarComponent } from './appcomponents/side-bar/side-bar.component';
             CardComponent,
             ChipsComponent, 
             ListComponent, 
-            TableComponent, 
+            TableComponent,
+            InputbuttonComponent, 
+            InputTextComponent,
             NavBarComponent,
             AppRoutingModule,
             SideBarComponent],
