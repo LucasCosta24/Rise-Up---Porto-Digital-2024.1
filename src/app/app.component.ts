@@ -4,7 +4,9 @@ import { CardComponent } from './components/card/card.component';
 import { ChipsComponent } from './components/chips/chips.component';
 import { ListComponent } from './components/list/list.component';
 import { TableComponent } from './components/table/table.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NavBarComponent } from './appcomponents/nav-bar/nav-bar.component';
+import { AppRoutingModule } from './app.routes';
+import { SideBarComponent } from './appcomponents/side-bar/side-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +16,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
             ChipsComponent, 
             ListComponent, 
             TableComponent, 
-            NavBarComponent],
+            NavBarComponent,
+            AppRoutingModule,
+            SideBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
