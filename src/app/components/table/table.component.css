@@ -1,6 +1,75 @@
+.app-component-viewer {
+  font-weight: 400;
+  width: calc(100% - 341px);
+  padding: 20px 50px;
+} 
+
+.app-title {
+  font-size: xx-large;
+}
+
+.title {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container {
+  align-items: center;
+  display: block;
+  padding: auto;
+  border: solid gray 1px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 80%;
+}
+.table-example{
+padding-left: 4rem;
+}
 table {
     width: 100%;
   }
+
+  .html-codigo {
+    align-items: center;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.ts-codigo{
+  align-items: center;
+  display: block;
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.css-codigo {
+  align-items: center;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.title-codigo {
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 35px;
+  padding-top: 15px;
+}
+
+code {
+  font-size: large;
+}
+
+.out-code{
+  background-color: plum;
+}
   
   th {
     text-align: left;

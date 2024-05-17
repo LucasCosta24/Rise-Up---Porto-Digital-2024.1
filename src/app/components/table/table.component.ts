@@ -3,20 +3,20 @@ import {Component} from '@angular/core';
 import {CdkTableModule} from '@angular/cdk/table';
 import {BehaviorSubject, Observable} from 'rxjs';
 
-export interface PeriodicDogs {
-  name: string;
-  position: number;
-  weight: number;
+export interface ColorNumbers {
+  nome: string;
+  posicao: number;
+  cor: string;
   
 }
 
-const ELEMENT_DATA: PeriodicDogs[] = [
-  {position: 1, name: 'Shiba Inu', weight: 1.0079},
-  {position: 2, name: 'Akita Ken', weight: 4.0026},
-  {position: 3, name: 'Hokkaidō Ken', weight: 6.941},
-  {position: 4, name: 'Kai Ken', weight: 9.0122},
-  {position: 5, name: 'Kishū Ken', weight: 10.811},
-  {position: 6, name: 'Shikoku Ken', weight: 12.0107},
+const COLOR_DATA: ColorNumbers[] = [
+  {posicao: 1, nome: 'Um', cor: 'Vermelho'},
+  {posicao: 2, nome: 'Dois', cor: 'Amarelo'},
+  {posicao: 3, nome: 'Três', cor:'Azul'},
+  {posicao: 4, nome: 'Quatro', cor: 'Verde'},
+  {posicao: 5, nome: 'Cinco', cor: 'Roxo'},
+  {posicao: 6, nome: 'Seis', cor: 'Laranja'},
  
 ];
 
@@ -28,15 +28,15 @@ const ELEMENT_DATA: PeriodicDogs[] = [
   imports: [CdkTableModule],
 })
 export class TableComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight'];
+  displayedColumns: string[] = ['posicao', 'nome', 'cor'];
   dataSource = new ExampleDataSource();
 }
 
-export class ExampleDataSource extends DataSource<PeriodicDogs> {
+export class ExampleDataSource extends DataSource<ColorNumbers> {
  
-  data = new BehaviorSubject<PeriodicDogs[]>(ELEMENT_DATA);
+  data = new BehaviorSubject<ColorNumbers[]>(COLOR_DATA);
 
-  connect(): Observable<PeriodicDogs[]> {
+  connect(): Observable<ColorNumbers[]> {
     return this.data;
   }
 
