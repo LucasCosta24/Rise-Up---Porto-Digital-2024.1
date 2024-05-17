@@ -1,6 +1,6 @@
 <div class="app-component-viewer">
 <div class="content">
-    <h1 class="app-title">Lista HTML</h1>
+    <h1 class="app-title">List:</h1>
     <div>
         Em HTML, a tag <code class="out-code">&lt;ul&gt;</code> representa uma lista não ordenada. 
         Ela é utilizada para criar uma lista de itens onde a ordem não possui relevância específica. 
@@ -26,9 +26,10 @@
 </span>
 
 <div class="content">
-<p>
-    Por padrão, os navegadores da web exibirão listas não ordenadas com marcadores (geralmente círculos, quadrados ou discos).
-    É possível   estilizar esses marcadores usando CSS se desejar uma aparência diferente.</p>
+    <p>
+        Por padrão, os navegadores da web exibirão listas não ordenadas com marcadores (geralmente círculos, quadrados ou discos).
+        É possível   estilizar esses marcadores usando CSS se desejar uma aparência diferente.
+    </p>
 </div>
 
 <div class="content">
@@ -36,8 +37,10 @@
 </div>
 
 <span class="container">
+    <div class="title-codigo">HTML</div>
     <code class="language-html">
         <span class="html-codigo">
+            
             <span>
                 &lt;<span>ul role="list" class="list"</span>&gt;
                 <br>
@@ -47,6 +50,8 @@
                 &lt;<span>li class="li">Item 2</span>&lt;<span>/li</span>&gt;
                 <br>
                 &lt;<span>li class="li">Item 3</span>&lt;<span>/li</span>&gt;
+                <br>
+                <span>&lt;/ul&gt;</span>
         </span>
     </code>
 </span>
@@ -85,7 +90,7 @@
     <div class="title-codigo">CSS</div>
     <span class="css-codigo">
         <code>
-            .list&#123; 
+            .list &#123; 
             <br>
             list-style: decimal;
             <br>
@@ -102,4 +107,97 @@
     <p><code class="out-code">list-style: upper-roman;</code> Estiliza a lista por símbolos em algarismo romano.</p>
     <p><code class="out-code">list-style: url;</code> Estiliza a lista por símbolo externo inserido via <code>url()</code>.</p>
 </div>
+
+<div class="content">
+<div class="title">Lista Aninhada</div>
+
+<p>
+    Uma lista aninhada em HTML permite criar subníveis de hierarquia dentro de listas não ordenadas <code class="out-code">&lt;ul&gt;</code> ou ordenadas <code class="out-code">&lt;ol&gt;</code>.
+    Isso é útil para organizar informações complexas de forma estruturada e facilitar a compreensão do usuário.
+</p>
+
+</div>
+
+<span class="container">
+    <ul role="list" class="list">
+            <span>
+                <div class="ul_title">Lista Aninhada</div>
+            </span>
+        <span>
+            <li class="li">Item 1</li>
+        </span>
+        <span>
+           <li class="li">Item 2</li> 
+        </span>
+            <span>
+                <ul style="list-style: none;">
+                    <li class="li">Item 2.1</li>
+                    <li class="li">Item 2.2</li>
+                </ul>
+            </span>
+        <span>
+            <li class="li">Item 3</li>
+        </span> 
+    </ul>
+</span>
+<br>
+<span class="container">
+    <div class="title-codigo">HTML</div>
+    <code class="language-html">
+        <span class="html-codigo">
+            <span>
+                <span>&lt;ul role="list" class="list"&gt;</span>
+                <br>
+            </span>
+                <span>&lt;li class="li">Item 1</span>&lt;<span>/li&gt;</span>
+                <br>
+                <span>&lt;li class="li">Item 2</span>&lt;<span>/li&gt;</span>
+                <br>
+                &lt;<span>ul&gt; 
+                <br>
+                    <span>
+                        <span>&lt;li class="li2">Item 2.1</span>&lt;<span>/li&gt;</span>
+                    </span>
+                    <br>
+                    <span>
+                        <span>&lt;li class="li2">Item 2.2</span>&lt;<span>/li&gt;</span>
+                    </span>
+                    <br>
+                    &lt;/ul</span>&gt;
+                <br>
+                &lt;<span>li class="li">Item 3</span>&lt;<span>/li</span>&gt;
+                <br>
+                <span>&lt;/ul&gt;</span>
+        </span>
+    </code>
+</span>
+<br>
+<span class="container">
+    <div class="title-codigo">CSS</div>
+    <span class="css-codigo">
+        <code>
+            .list &#123; 
+            <br>
+            list-style: none;
+            <br>
+            &#125;
+            <br>
+            .li2 &#123; 
+            <br>
+            list-style: none;
+            <br>
+            &#125;
+        </code>
+    </span>
+</span>
+
+<div class="content">
+    <div class="title">Lista Aninhada</div>
+    
+    <p>
+        Uma lista aninhada em HTML permite criar subníveis de hierarquia dentro de listas não ordenadas <code class="out-code">&lt;ul&gt;</code> ou ordenadas <code class="out-code">&lt;ol&gt;</code>.
+        Isso é útil para organizar informações complexas de forma estruturada e facilitar a compreensão do usuário.
+    </p>
+    
+    </div>
 </div>

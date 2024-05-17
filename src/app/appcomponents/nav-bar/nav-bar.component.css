@@ -16,7 +16,7 @@
     width: 100%;
     z-index: 100;
     display: flex;
-    border-bottom: solid rgb(50, 243, 243);
+    border-bottom: solid rgb(33, 149, 243);
 }
 
 .logo {
@@ -51,6 +51,6 @@
     height: 35px;
     border-radius: 10px;
     text-align: center;
-    border: none;
-    background-color: rgb(50, 243, 243);
+    border: 1px thick rgb(0, 123, 255);
+    background-color: white;
 }

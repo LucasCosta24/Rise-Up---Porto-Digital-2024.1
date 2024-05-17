@@ -23,14 +23,12 @@
     padding-bottom: 25px;
 }
 
-.container {
-    align-items: center;
+.container {    
     display: block;
-    padding: auto;
     border: solid gray 1px;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 40%;
+    width: 50%;
 }
 
 .list {
@@ -48,8 +46,10 @@
 
 
 .ul_title {
-    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
     font-weight: normal;
+    font-size: 18px;
 }
 
 .li {
