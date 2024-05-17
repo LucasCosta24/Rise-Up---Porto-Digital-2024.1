@@ -3,9 +3,7 @@
    <h1 class="app-title">Table:</h1>
 
    <div>
-    Em HTML, a tag <code class="out-code">&lt;ul&gt;</code> representa uma lista não ordenada. 
-    Ela é utilizada para criar uma lista de itens onde a ordem não possui relevância específica. 
-    Cada item dentro da lista não ordenada é definido utilizando a tag <code class="out-code">&lt;li&gt;</code> (item da lista).
+    As tabelas HTML são elementos fundamentais na construção de páginas web, pois permitem organizar e apresentar dados de forma clara, concisa e informativa. Elas são utilizadas em diversos contextos, desde a exibição de listas de produtos em lojas online até a apresentação de resultados de pesquisas em sites científicos.
 </div>
 </div>
 
@@ -36,16 +34,6 @@
   </table>
 </span>
 <!--Fim da Tabela-->>
-<div class="content">
-  <p>
-      Por padrão, os navegadores da web exibirão listas não ordenadas com marcadores (geralmente círculos, quadrados ou discos).
-      É possível   estilizar esses marcadores usando CSS se desejar uma aparência diferente.
-  </p>
-</div>
-
-<div class="content">
-  <div class="title"> Code: </div>
-  </div>
 
 
 <!--Codigo EXPLICATIVO HTML-->
@@ -89,8 +77,14 @@
         </span>
     </code>
 </span>
-
-<br>
+<div class="content">
+  <div class="title"> Code: </div>
+  </div>
+<div class="content">
+  <p>
+    O TypeScript aprimora a funcionalidade das tabelas HTML possibilitando a manipulação e interação dinâmica de dados. Você pode vincular dados de arrays ou objetos JavaScript às células da tabela, permitindo atualizações em tempo real e interações do usuário.
+  </p>
+</div>
 <!--Codigo EXPLICATIVO TS-->
 <span class ="container">
   <div class="title-codigo">TS</div>
@@ -166,6 +160,78 @@
 </span>
 
 <br>
+<!--Codigo EXPLICATIVO CSS-->
+<span class="container">
+  <div class="title-codigo">CSS</div>
+  <span class="css-codigo">
+      <code>
+        .table-example&#123;
+        <br>
+          padding-left: 4rem;
+          <br>
+          &#125;
+          <br>
+          table &#123;
+          <br>
+              width: 100%;
+              <br>
+            &#125;
+      </code>
+  </span>
+</span>
 
+<!--Explicações de outras feats-->
+
+<div class="content">
+  <div class="title"> Tags Estruturais De Uma Tabela: </div>
+  </div>
+
+<div class="content">
+  <p>
+    a estrutura básica de uma tabela consiste nas tags <code class="out-code">&lt;tr&gt;</code>, <code class="out-code">&lt;td&gt;</code> e as células de título <code class="out-code">&lt;th&gt;</code>. Porém, além dessas, também há tags que servem para estruturar melhor a tabela. São elas:
+  </p>
+  <br>
+  <p><code class="out-code">&lt;thead&gt;&lt;/thead&gt;</code> – Esta tag representa o cabeçalho da tabela, geralmente composta por células título.</p>
+    <p><code class="out-code">&lt;tbody&gt;&lt;/body&gt;</code>– Essa tag representa o corpo da tabela;</p>
+      <p><code class="out-code">&lt;tfoot&gt;&lt;/tfoot&gt;</code>– Essa tag representa o rodapé da tabela.</p>
+        <p>essas tags tem como principal efeito manter uma semântica adequada para suas tabelas.</p>
+</div>
+
+<table border="1">
+  <thead>
+  <tr>
+      <th>titulo 1</th>
+      <th>titulo 2</th>
+      <th>titulo 3</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>Body1 linha1</td>
+      <td>Body2 linha1</td>
+      <td>Body3 linha1</td>
+  </tr>
+  <tr>
+      <td>Body1 linha2</td>
+      <td>Body2 linha2</td>
+      <td>Body3 linha2</td>
+  </tr>
+  </tbody>
+  <tfoot>
+      <td>Foot 1</td>
+      <td>Foot 2</td>
+      <td>Foot 3</td>
+  </tfoot>
+</table>
+
+<span class="container">
+  <div class="title-codigo">HTML da tabela</div>
+  <code class="language-html">
+      <span class="html-codigo">
+
+
+  </span>
+  </code>
+  </span>
 
 </div>
