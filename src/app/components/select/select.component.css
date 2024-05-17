@@ -1,5 +1,73 @@
-.example-additional-selection {
-    opacity: 0.75;
-    font-size: 0.75em;
-  }
-  
+.app-component-viewer {
+  font-weight: 400;
+  width: calc(100% - 341px);
+  padding: 20px 50px;
+}
+.app-title {
+  font-size: xx-large;
+}
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.container {    
+  display: block;
+  border: solid gray 1px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  width: 70%;
+  height: 75px;
+}
+
+.container2 {
+display: block;
+border: solid gray 1px;
+box-sizing: border-box;
+border-radius: 20px;
+width: 70%;
+}
+
+.select {
+  font-size: large;
+}
+.title-codigo {
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 35px;
+  padding-top: 15px;
+}
+.title {
+  font-size: x-large;
+  font-weight: bolder;
+}
+code {
+  font-size: large;
+}
+
+.out-code{
+  background-color: plum;
+}
+
+.html-codigo {
+    align-items: center;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.css-codigo {
+    align-items: center;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title-codigo {
+    font-size: large;
+    font-weight: bolder;
+    padding-left: 35px;
+    padding-top: 15px;
+}

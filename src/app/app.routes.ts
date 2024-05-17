@@ -8,6 +8,7 @@ import { ChipsComponent } from './components/chips/chips.component';
 import { InputTextComponent } from './components/inputtext/inputtext.component';
 import { InputbuttonComponent } from './components/inputbutton/inputbutton.component';
 import { ButtonComponent } from './components/button/button.component';
+import { SelectComponent } from './components/select/select.component';
 
 
 export const routes: Routes = [
@@ -18,7 +19,7 @@ export const routes: Routes = [
     { path: 'button-input', component: InputbuttonComponent},
     { path: 'list', component: ListComponent},
     // { path: 'modal', component: TableComponent},
-    { path: 'select', component: TableComponent},
+    { path: 'select', component: SelectComponent},
     { path: 'table', component: TableComponent},
 ];
 
