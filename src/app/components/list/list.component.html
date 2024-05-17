@@ -192,12 +192,88 @@
 </span>
 
 <div class="content">
-    <div class="title">Lista Aninhada</div>
-    
+    <div class="title">Lista de Botões</div>
     <p>
-        Uma lista aninhada em HTML permite criar subníveis de hierarquia dentro de listas não ordenadas <code class="out-code">&lt;ul&gt;</code> ou ordenadas <code class="out-code">&lt;ol&gt;</code>.
-        Isso é útil para organizar informações complexas de forma estruturada e facilitar a compreensão do usuário.
+        Criar uma lista de botões em HTML envolve combinar as tags <code class="out-code">&lt;ul&gt;</code> (lista não ordenada) ou <code class="out-code">&lt;ol&gt;</code> (lista ordenada) com a tag <code class="out-code">&lt;li&gt;</code> (item da lista) para definir cada botão. 
+        Dentro de cada <code class="out-code">&lt;li&gt;</code>, você pode usar a tag <code class="out-code">&lt;button&gt;</code> para criar o botão propriamente dito. 
+        Aqui está um exemplo básico:
     </p>
-    
-    </div>
+</div>
+
+<span class="container">
+    <ul role="list" class="list">
+            <span>
+                <div class="ul_title">Lista de Botões</div>
+            </span>
+        <span>
+            <li class="li">
+                <button class="li-button-example">Botão 1</button>
+            </li>
+        </span>
+        <span>
+           <li class="li">
+                <button class="li-button-example">Botão 2</button>
+           </li> 
+        </span>
+        <span>
+            <li class="li">
+                <button class="li-button-example">Botão 3</button>
+            </li>
+        </span> 
+    </ul>
+</span>
+<br>
+
+<span class="container">
+    <div class="title-codigo">HTML</div>
+    <code class="language-html">
+        <span class="html-codigo">
+            <span>
+                <span>&lt;ul role="list" class="list"&gt;</span>
+                <br>
+            </span>
+                <span>&lt;li class="li">
+                    <br>
+                    &lt;button class="li-button-example"&gt;Botão 1&lt;/button&gt;
+                    <br>
+                </span>&lt;<span>/li&gt;</span>
+                <br>
+                <span>&lt;li class="li">
+                    <br>
+                    &lt;button class="li-button-example"&gt;Botão 2&lt;/button&gt;
+                    <br>
+                </span>&lt;<span>/li&gt;</span>
+                <br>
+                &lt;<span>li class="li">
+                    <br>
+                    &lt;button class="li-button-example"&gt;Botão 3&lt;/button&gt;
+                    <br>
+                </span>&lt;<span>/li</span>&gt;
+                <br>
+                <span>&lt;/ul&gt;</span>
+        </span>
+    </code>
+</span>
+<br>        
+<span class="container">
+    <div class="title-codigo">CSS</div>
+    <span class="css-codigo">
+        <code>
+            .li-button-example &#123; <br>
+                padding: 10px; <br>
+                border: 1px solid black; <br>
+                font-size: large; <br>
+                background-color: white; <br>
+                border-radius: 20px; <br>
+            &#125; <br>
+            
+            .li-button-example:hover &#123; <br>
+                cursor: pointer; <br>
+                color: white; <br>
+                background-color: rgb(0, 123, 255); <br>
+            &#125; <br>
+        </code>
+    </span>
+</span>
+
 </div>
