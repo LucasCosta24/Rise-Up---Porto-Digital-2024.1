@@ -11,12 +11,14 @@ import { InputbuttonComponent } from './components/inputbutton/inputbutton.compo
 import { InputTextComponent } from './components/inputtext/inputtext.component';
 import { SelectComponent } from './components/select/select.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CardPageComponent } from './pages/card-page/card-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
             CardComponent,
+            CardPageComponent,
             ChipsComponent, 
             ListComponent, 
             TableComponent,

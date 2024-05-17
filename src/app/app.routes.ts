@@ -9,11 +9,12 @@ import { InputTextComponent } from './components/inputtext/inputtext.component';
 import { InputbuttonComponent } from './components/inputbutton/inputbutton.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SelectComponent } from './components/select/select.component';
+import { CardPageComponent } from './pages/card-page/card-page.component';
 
 
 export const routes: Routes = [
     { path: 'button', component: ButtonComponent},
-    { path: 'card', component: CardComponent},
+    { path: 'card', component: CardPageComponent},
     { path: 'chip', component: ChipsComponent},
     { path: 'text-input', component: InputTextComponent},
     { path: 'button-input', component: InputbuttonComponent},
