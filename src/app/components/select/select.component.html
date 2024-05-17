@@ -1,17 +1,10 @@
-<mat-form-field>
-    <mat-label>Nomes</mat-label>
-    <mat-select [formControl]="Nomes" multiple>
-      <mat-select-trigger>
-        {{Nomes.value?.[0] || ''}}
-        @if ((Nomes.value?.length || 0) > 1) {
-          <span class="example-additional-selection">
-            (+{{(Nomes.value?.length || 0) - 1}} {{Nomes.value?.length === 2 ? 'other' : 'others'}})
-          </span>
-        }
-      </mat-select-trigger>
-      @for (topping of toppingList; track topping) {
-    <mat-option [value]="topping">{{topping}}</mat-option>
-  }
-    </mat-select>
-  </mat-form-field>
-  
+<select id="Nomeselect">
+  <option value="">Selecione um Nome</option>
+  <option value="marllon">Marllon</option>
+  <option value="josé">José</option>
+  <option value="Joao">Joao</option>
+  <option value="matheus">Matheus</option>
+  <option value="duda">Duda</option>
+  <option value="joninhas">Joninhas</option>
+  <option value="luquinhas">Luqinhas</option>
+</select>
