@@ -1,30 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Buttons</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-</head>
-<body>
-    <div class="container">
-        <h2>Escolha uma opção:</h2>
-        <div class="radio-group">
-            <input type="radio" id="option1" name="options" value="option1">
-            <label for="option1">Opção 1</label><br>
-            
-            <input type="radio" id="option2" name="options" value="option2">
-            <label for="option2">Opção 2</label><br>
-            
-            <input type="radio" id="option3" name="options" value="option3">
-            <label for="option3">Opção 3</label><br>
-            
-            <input type="radio" id="option4" name="options" value="option4">
-            <label for="option4">Opção 4</label><br>
-            
-            <input type="radio" id="option5" name="options" value="option5">
-            <label for="option5">Opção 5</label><br>
+<div class="app-component-viewer">
+    <div class="content">
+        <h1 class="app-title">Radio Button</h1>
+        <div>
+            Os radio buttons são elementos de seleção que permitem aos usuários escolher apenas uma opção de um conjunto.
+             Eles são representados visualmente como círculos preenchidos, onde apenas uma opção pode ser selecionada por vez.
         </div>
     </div>
-</body>
-</html>
+    <span class="container">
+        <span class="input-text-example">
+            <div class="radio-container">
+                <form action="#">
+                    <div class="input-group">
+                        <input type="radio" id="option1" name="option" value="option1" checked>
+                        <label for="option1">Opção 1</label><br>
+                        <input type="radio" id="option2" name="option" value="option2">
+                        <label for="option2">Opção 2</label><br>
+                        <input type="radio" id="option3" name="option" value="option3">
+                        <label for="option3">Opção 3</label>
+                    </div>
+                </form>
+            </div>
+        </span>
+    </span>
+    <div class="html-code">
+        <h2>HTML:</h2>
+        <code>
+            &lt;form action="#"&gt;<br>
+            &emsp;&lt;div class="input-group"&gt;<br>
+            &emsp;&emsp;&lt;input type="radio" id="option1" name="option" value="option1" checked&gt;<br>
+            &emsp;&emsp;&lt;label for="option1"&gt;Opção 1&lt;/label&gt;&lt;br&gt;<br>
+            &emsp;&emsp;&lt;input type="radio" id="option2" name="option" value="option2"&gt;<br>
+            &emsp;&emsp;&lt;label for="option2"&gt;Opção 2&lt;/label&gt;&lt;br&gt;<br>
+            &emsp;&emsp;&lt;input type="radio" id="option3" name="option" value="option3"&gt;<br>
+            &emsp;&emsp;&lt;label for="option3"&gt;Opção 3&lt;/label&gt;<br>
+            &emsp;&lt;/div&gt;<br>
+            &lt;/form&gt;
+        </code>
+    </div>
+</div>
+
+
+
+<div class="app-component-viewer">
+    <div class="content">
+        <h1 class="app-title">Botão de Ligação</h1>
+        <div>
+            O botão de ligação é um elemento de interface que permite aos usuários alternar entre dois estados, como ligado/desligado, ativo/inativo, etc.
+        </div>
+    </div>
+    <span class="container">
+        <span class="input-text-example">
+            <div class="radio-container">
+                <form action="#">
+                    <div class="input-group">
+                        <label for="toggle">Estado:</label><br>
+                        <input type="checkbox" id="toggle" name="toggle">
+                        <label for="toggle" class="toggle-label">Desligado</label>
+                    </div>
+                </form>
+            </div>
+        </span>
+    </span>
+    <div class="html-code">
+        <h2>HTML:</h2>
+        <code>
+            &lt;form action="#"&gt;<br>
+            &emsp;&lt;div class="input-group"&gt;<br>
+            &emsp;&emsp;&lt;label for="toggle"&gt;Estado:&lt;/label&gt;&lt;br&gt;<br>
+            &emsp;&emsp;&lt;input type="checkbox" id="toggle" name="toggle"&gt;<br>
+            &emsp;&emsp;&lt;label for="toggle" class="toggle-label"&gt;Desligado&lt;/label&gt;<br>
+            &emsp;&lt;/div&gt;<br>
+            &lt;/form&gt;
+        </code>
+    </div>
+</div>
