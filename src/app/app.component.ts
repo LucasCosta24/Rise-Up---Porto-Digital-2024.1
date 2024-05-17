@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app.routes';
 import { SideBarComponent } from './appcomponents/side-bar/side-bar.component';
 import { InputbuttonComponent } from './components/inputbutton/inputbutton.component';
 import { InputTextComponent } from './components/inputtext/inputtext.component';
+import { SelectComponent } from './components/select/select.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +24,9 @@ import { InputTextComponent } from './components/inputtext/inputtext.component';
             InputTextComponent,
             NavBarComponent,
             AppRoutingModule,
-            SideBarComponent],
+            SideBarComponent,
+            SelectComponent,
+            ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

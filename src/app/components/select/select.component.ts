@@ -5,7 +5,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 /** @title Select with custom trigger text */
 @Component({
-  selector: 'select-custom-trigger-example',
+  selector: 'app-select',
   templateUrl: 'select.component.html',
   styleUrl: 'select.component.css',
   standalone: true,

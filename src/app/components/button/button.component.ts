@@ -7,7 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
  * @title Basic buttons
  */
 @Component({
-  selector: 'button-overview-example',
+  selector: 'app-button',
   templateUrl: 'button.component.html',
   styleUrl: 'button.component.css',
   standalone: true,
