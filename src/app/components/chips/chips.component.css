@@ -1,3 +1,57 @@
-.img {
-    max-width: 80px;
-  }
+.chip {
+  display: inline-block;
+  padding: 0 10px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 32px;
+  border-radius: 16px;
+  background-color: #e0e0e0;
+  margin: 5px;
+}
+
+.app-component-viewer {
+  font-weight: 400;
+  width: calc(100% - 341px);
+  padding: 20px 50px;
+}
+
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.app-title {
+  font-size: xx-large;
+}
+
+.container {    
+  display: block;
+  border: solid gray 1px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+}
+
+.code_title {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+
+
+.chip-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contenti{
+  width: 100%;
+  text-align: center;
+}
