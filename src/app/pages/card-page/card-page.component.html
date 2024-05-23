@@ -9,7 +9,7 @@
     <app-card>
         <p class="text-card">{{longText}}</p>
     </app-card>
-    
+            
     <div class="content">
         <p> Texto complementar.
         </p>
@@ -18,11 +18,12 @@
     <br>
     <span class="container">
         <div class="title-codigo">HTML</div>
-        <code class="language-html">
-            <span class="html-codigo">
-                <div>{{textHtml}}</div>
-            </span>
-        </code>
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHighlight"
+                  language="ts"
+                  lineNumbers></code>
+          </pre>
     </span>
 
     <br>
@@ -39,9 +40,10 @@
     <span class="container">
         <div class="title-codigo">TypeScript</div>
         <span class="css-codigo">
-            <code>
-                <div>{{textTs}}</div>
-            </code>
+            <pre>
+                <code [highlightAuto]="codeForHighlightAuto" 
+                      lineNumbers></code>
+              </pre>
         </span>
     </span>
     
