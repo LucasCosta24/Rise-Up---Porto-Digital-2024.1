@@ -1,21 +1,54 @@
 
 <div class="app-component-viewer">
-  <div class="content">
+    <div class="content">
       <h1 class="app-title">Chip:</h1>
-      <p>Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação. 
-          Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar 
-          entradas de usuário, tais como seleções, contatos, ou filtros.</p>
-  </div>
-  
-  <span class="container">
-      <span>
-          <div class="code_title">Chip Estático</div>
-      </span>
-      <div class="contenti">
-          <div class="chip" [ngStyle]="{'background-color': bgColor}">
-              <span>{{text}}</span>
-          </div> 
+      <p>
+        Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação. 
+        Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar 
+        entradas de usuário, tais como seleções, contatos, ou filtros.
+      </p>
+    </div>
+    
+    <span>
+      <div class="content">
+        <div class="title">Chip Estático</div>
       </div>
-  </span>
+    </span>
   
+    <span class="container">
+      <div class="contenti">
+        <div class="chip" [ngStyle]="{'background-color': bgColor}">
+          <div>{{text1}}</div>
+        </div>
+        <div class="chip1" [ngStyle]="{'background-color': bgColor1}">
+          <div>{{text2}}</div>
+        </div>
+      </div>
+    </span>
+    
+    <div class="content">
+      <p>
+        Se refere a um tipo de chip que exibe informações estáticas e não interativas. 
+        Esses chips podem ser úteis para mostrar informações que não precisam de 
+        interação do usuário, como tags ou rótulos.
+      </p>
+    </div>
+  </div>
+  <span class="container">
+  <div class="title-codigo">HTML</div>
+    <code class="language-html">
+        <span class="html-codigo">
+            <span>
+                &lt;div class="chip" [ngStyle]="&#132;&apos;background-color&#39;: bgColor&#135;"&gt;
+                <br>
+                &lt;div {{text1}}&gt;
+            </span>
+            <span></span>
+        </span>
+    </code>
+</span>
+<!-- <div class="chip" [ngStyle]="{'background-color': bgColor}">
+    <div>{{text1}}</div>
+  </div> -->
+ 
   
