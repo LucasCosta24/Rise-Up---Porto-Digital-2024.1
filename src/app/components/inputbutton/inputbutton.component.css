@@ -1,85 +1,73 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.login-container, .radio-container {
-  width: 300px;
-  margin: 100px auto;
-  background-color: #fff;
-  padding: 20px;
+.radio-container, .toggle-container {
+  background-color: #ffffff;
+  padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #000000;
+  width: 100px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.h1 {
-  text-align: center;
+.toggle-label {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ffffff;
+  border-radius: 17px;
+  position: relative;
 }
 
-.input-group, .radio-container {
-  margin-bottom: 20px;
+.toggle-label::after {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: -55px;
+  left: 93px;
+  transition: 0.3s;
+  border: 5px solid #fffafa;
 }
 
-.input-group label {
-  display: block;
+input[type="checkbox"]:checked + .toggle-label::after {
+  transform: translateY(50px);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-container label {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  font-size: 14px;
   margin-bottom: 5px;
 }
 
-.input-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+input[type="radio"]:checked + .radio-option::before {
+  background-color: #000000;
 }
 
-.button-container {
-  text-align: center;
+.radio-option {
+  color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
-.button-container button {
-  width: 150px; /* ajuste o tamanho aqui conforme necessário */
-  margin: 5px; /* ajuste o espaçamento aqui conforme necessário */
-  padding: 10px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
+.radio-option {
   cursor: pointer;
-  border-radius: 3px;
 }
 
-.button-container button:hover {
-  background-color: #0056b3;
+.radio-option input[type="radio"] {
+  cursor: pointer;
 }
 
-.html-code {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
+.radio-option:hover::before {
+  border-color: #333333;
 }
 
-.html-code h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.html-code code, .css-container code {
-  display: block;
-  padding: 10px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
+.radio-option input[type="radio"]:checked + .radio-option::before {
+  background-color: #000000;
+  border-color: #000000;
 }
