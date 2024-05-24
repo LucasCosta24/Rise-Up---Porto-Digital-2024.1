@@ -13,6 +13,7 @@ import { SelectComponent } from './components/select/select.component';
 import { ButtonComponent } from './components/button/button.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
+import { InputPageComponent } from './pages/input-page/input-page.component';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,8 @@ import { ModaisComponent } from './components/modais/modais.component';
             SideBarComponent,
             SelectComponent,
             ButtonComponent,
-            ModaisComponent],
+            ModaisComponent,
+            InputPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

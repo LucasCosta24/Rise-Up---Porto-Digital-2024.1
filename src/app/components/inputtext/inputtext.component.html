@@ -1,132 +1,17 @@
-<div class="app-component-viewer">
-    <div class="content">
-        <h1 class="app-title">Input texto:</h1>
-        <div>
-            Em HTML, a tag &lt;input type="text"&gt; representa uma caixa de entrada de texto. 
-            Ela é utilizada para criar uma caixa de entrada de texto de tipo não específicado. 
-        </div>
-    </div>
-    <span class="container">
-        <span class="input-text-example">
-            <div class="login-container">
-                <form action="#">
-                    <div class="input-group">
-                        <label for="username">Dados:</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                </form>
-            </div>
-        </span>
-    </span>
-    <div class="html-code">
-        <h2>HTML:</h2>
-        <code>
-            &lt;form action="#"&gt;<br>
-            &emsp;&lt;div class="input-group"&gt;<br>
-            &emsp;&emsp;&lt;label for="username"&gt;Dados:&lt;/label&gt;<br>
-            &emsp;&emsp;&lt;input type="text" id="username" name="username" required&gt;<br>
-            &emsp;&lt;/div&gt;<br>
-            &lt;/form&gt;
-        </code>
-    </div>
-</div>
-
-<div class="app-component-viewer">
-    <div class="content">
-        <h1 class="app-title">Input senha:</h1>
-        <div> 
-            Em HTML, a tag &lt;input type="password"&gt; representa uma caixa de entrada de texto de tipo senha. 
-            Ela é utilizada para criar uma caixa de entrada de dados, onde o texto inserido não é visualizado pelo usuário. 
-        </div>
-    </div>
-    <span class="container">
-        <span class="input-text-example">
-            <div class="login-container">
-                <form action="#">
-                    <div class="input-group">
-                        <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                </form>
-            </div>
-        </span>
-    </span>
-    <div class="html-code">
-        <h2>HTML:</h2>
-        <code>
-            &lt;form action="#"&gt;<br>
-            &emsp;&lt;div class="input-group"&gt;<br>
-            &emsp;&emsp;&lt;label for="password"&gt;Senha:&lt;/label&gt;<br>
-            &emsp;&emsp;&lt;input type="password" id="password" name="password" required&gt;<br>
-            &emsp;&lt;/div&gt;<br>
-            &lt;/form&gt;
-        </code>
-    </div>
-</div>
-
-<div class="app-component-viewer">
-    <div class="content">
-        <h1 class="app-title">Input data:</h1>
-        <div>
-            Em HTML, a tag &lt;input type="date"&gt; representa uma caixa de entrada de texto de tipo data. 
-            Ela é utilizada para criar uma caixa de entrada de dados, onde o texto é no formato dia/mês/ano. 
-        </div>
-    </div>
-    <span class="container">
-        <span class="input-text-example">
-            <div class="login-container">
-                <form action="#">
-                    <div class="input-group">
-                        <label for="birthdate">Data de Nascimento:</label>
-                        <input type="date" id="birthdate" name="birthdate" required>
-                    </div>
-                </form>
-            </div>
-        </span>
-    </span>
-
-    <div class="html-code">
-        <h2>HTML:</h2>
-        <code>
-            &lt;form action="#"&gt;<br>
-            &emsp;&lt;div class="input-group"&gt;<br>
-            &emsp;&emsp;&lt;label for="birthdate"&gt;Data de Nascimento:&lt;/label&gt;<br>
-            &emsp;&emsp;&lt;input type="date" id="birthdate" name="birthdate" required&gt;<br>
-            &emsp;&lt;/div&gt;<br>
-            &lt;/form&gt;
-        </code>
-    </div>
+<div *ngIf="type == 'text'" class="input-group">
+    <label for="username">{{text}}</label>
+    <input type="text" id="username" name="username" required>
 </div>
 
 
-<div class="content">
-    <h1 class="app-title">Input Estilização:</h1>
-    <div>
-        Em HTML, nós podemos fazer a estilização de um input, com objetivo de deixar ela mais funcional para o usuário,
-        estética e intuitiva.
-    </div>
+<div *ngIf="type == 'password'" class="input-group">
+    <label for="password">{{text}}</label>
+    <input type="password" id="password" name="password" required>
 </div>
-<span class="container">
-    <div class="title-codigo"></div>
-    <span class="css-codigo">
-        <div class="css-container">
-            <h2>CSS:</h2>
-            <code>
-                body &#123; <br>
-                &emsp;font-family: Arial, sans-serif; <br>
-                &emsp;background-color: #f4f4f4; <br>
-                &emsp;margin: 0; <br>
-                &emsp;padding: 0; <br>
-                &#125; <br>
-                
-                h1 &#123; <br>
-                &emsp;color: blue; <br>
-                &#125; <br>
-                
-                p &#123; <br>
-                &emsp;color: green; <br>
-                &#125; <br>
-            </code>
-        </div>
-    </span>
-</span>
+
+
+
+<div *ngIf="type == 'date'" class="input-group">
+    <label for="birthdate">{{text}}</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+</div>
