@@ -10,6 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input() title: string = "Banco de Dados";
-  @Input() longText: string = "Conteúdo do card";
   @Input() icon: string = "database";
 }

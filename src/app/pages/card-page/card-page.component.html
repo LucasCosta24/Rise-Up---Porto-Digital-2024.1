@@ -1,54 +1,65 @@
 <div class="app-component-viewer">
-    <div class="content">
+    <div class="container">
         <h1 class="app-title">Card:</h1>
         <div>
-            Drescrição resumida.
+            O componente de card é um elemento de interface de usuário que exibe conteúdo em um formato compacto e visual. É usado para representar informações breves, como um resumo de um produto, serviço, artigo, usuário, ou qualquer outro tipo de conteúdo.
         </div>
     </div>
+
+    <br>
 
     <app-card>
         <p class="text-card">{{longText}}</p>
     </app-card>
-            
-    <div class="content">
-        <p> Texto complementar.
-        </p>
+    <br>        
+    <div class="container">
+        <p>Seletor: app-card</p>
+        <p>Exportado como: CardComponent</p>
     </div>
 
     <br>
     <span class="container">
-        <div class="title-codigo">HTML</div>
+        <div class="title-codigo">HTML:</div>
         <pre class="pre">
             <code class="code"
-                  [highlight]="codeForHighlight"
+                  [highlight]="codeForHTML"
                   language="ts"
                   lineNumbers></code>
           </pre>
     </span>
+    <br>
+
+    <div class="container">
+        <p>No Angular, a tag <code class="out-code">&lt;ng-content&gt;</code> permite que ao chamar o componente, tudo que for adicionado dentro do <code class="out-code">&lt;app-card&gt;</code>seja renderizado no corpo do card.</p>
+     
+    </div>
 
     <br>
     <span class="container">
-        <div class="title-codigo">CSS</div>
-        <span class="css-codigo">
-            <code>
-                <div>{{textCss}}</div>
-            </code>
-        </span>
+        <div class="title-codigo">CSS:</div>
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForCSS"
+                  language="ts"
+                  lineNumbers></code>
+          </pre>
     </span>
-
     <br>
+
     <span class="container">
-        <div class="title-codigo">TypeScript</div>
-        <span class="css-codigo">
-            <pre>
-                <code [highlightAuto]="codeForHighlightAuto" 
-                      lineNumbers></code>
-              </pre>
-        </span>
+        <div class="title-codigo">TypeScript:</div>
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForTS"
+                  language="ts"
+                  lineNumbers></code>
+          </pre>
     </span>
-    
-    <div class="content">
-        <p>
-           Explicar Inputs do TypeScript.
-        </p>
+    <br>
+
+    <div class="container">
+        <p class="title-codigo">Inputs:</p>
+        <p>title: Adiciona o título do card</p>
+        <p>icon: Adiciona o ícone através da biblioteca Font Awesome. Exemplos: camera, car, cog, envelope, heart, home, phone, search, shopping-cart, user
+        </p>     
     </div>
