@@ -10,6 +10,7 @@ import { InputbuttonComponent } from './components/inputbutton/inputbutton.compo
 import { ButtonComponent } from './components/button/button.component';
 import { SelectComponent } from './components/select/select.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
+import { ModaisComponent } from './components/modais/modais.component';
 
 
 export const routes: Routes = [
@@ -19,7 +20,7 @@ export const routes: Routes = [
     { path: 'text-input', component: InputTextComponent},
     { path: 'button-input', component: InputbuttonComponent},
     { path: 'list', component: ListComponent},
-    // { path: 'modal', component: TableComponent},
+    { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
     { path: 'table', component: TableComponent},
 ];
