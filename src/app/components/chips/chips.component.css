@@ -89,6 +89,14 @@
   width: 100%;
 }
 
+.TS-codigo{
+  align-items: center;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .title-codigo {
   font-size: large;
   font-weight: bolder;
@@ -102,4 +110,54 @@ code {
 
 .out-code{
   background-color: plum;
+}
+
+.container-html{
+ display: block;
+  border: solid gray 1px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: auto;
+  padding: 10px; 
+  
+}
+
+.container-css{
+  display: block;
+   border: solid gray 1px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   width: 50%;
+   margin-left: 10%;
+   margin-right: auto;
+   padding: 1px; 
+ }
+
+ .container-TS{
+  display: block;
+   border: solid gray 1px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   width: 50%;
+   margin-left: 10%;
+   margin-right: auto;
+   padding: 1px; 
+ }
+
+ .chip {
+  display: inline-block;
+  padding: 0px 10px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  cursor: pointer; /* Adicionando um cursor de ponteiro para indicar que o chip é clicável */
+}
+
+.chip:hover {
+  background-color: #fffefe; /* Alterando a cor de fundo quando o chip é hover */
 }

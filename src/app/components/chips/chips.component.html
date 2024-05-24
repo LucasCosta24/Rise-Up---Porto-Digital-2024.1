@@ -34,21 +34,74 @@
       </p>
     </div>
   </div>
-  <span class="container">
-  <div class="title-codigo">HTML</div>
-    <code class="language-html">
-        <span class="html-codigo">
-            <span>
-                &lt;div class="chip" [ngStyle]="&#132;&apos;background-color&#39;: bgColor&#135;"&gt;
-                <br>
-                &lt;div {{text1}}&gt;
-            </span>
-            <span></span>
-        </span>
-    </code>
-</span>
-<!-- <div class="chip" [ngStyle]="{'background-color': bgColor}">
-    <div>{{text1}}</div>
-  </div> -->
- 
   
+  
+  
+  <div>
+    <span class="container-html">
+     <div class="title-codigo">HTML</div>
+       <code class="language-html">
+          <div class="html-codigo">
+            <code>
+                &emsp;&lt;div class="chip"&gt;[ngStyle]="&#123;'background-color': bgColor &#125;"<br>
+            &emsp;&lt;div&gt; &#123; &#123;text1&#125; &#125; &emsp;&lt;/div&gt;<br>
+                &emsp;&lt;/div&gt;
+            </code>
+          </div>
+        </code>
+    </span>
+  </div>
+
+  <br>
+  <br>     
+
+    <span class="container-css">
+      <div class="title-codigo">CSS</div>
+        <code class="language-html">   
+          <div class="css-codigo">
+            <code>
+              .chip&#123;<br>
+              display: inline-block;<br>
+              height: 32px;<br>
+              font-size: 14px;<br>
+              line-height: 32px;<br>
+              border-radius: 16px;<br>
+              background-color: #e0e0e0;<br>
+              margin: 5px;<br>
+              &#125;<br>
+            </code>
+          </div>
+        </code>
+    </span>
+      
+    <br>
+    <br>  
+
+   <span class="container-TS">
+      <div class="title-codigo">TS</div>
+        <code class="language-html">   
+          <div class="TS-codigo">
+           <code>
+            &#64;Input() text1: string = "Chip um";<br>
+            &#64;Input('bg-color') bgColor: string = "#dce0dd ";<br>
+          </code>
+        </div>
+      </code>
+  </span>
+
+  <br>
+  <br>
+
+  
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip1</title>
+    <link rel="stylesheet" href="chips.component.css">
+     </head>
+    <body>
+      <div class="chip">
+        <div id="chip12" class="chip12">Digite</div>
+      </div>
+    <script src="script.js"></script>
+    </body>

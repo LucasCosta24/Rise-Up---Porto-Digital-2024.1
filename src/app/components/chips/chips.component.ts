@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild, ElementRef } from '@angular/core';
 import {MatChipsModule} from '@angular/material/chips';
 
 
@@ -8,7 +8,9 @@ import {MatChipsModule} from '@angular/material/chips';
   standalone: true,
   imports: [MatChipsModule, CommonModule],
   templateUrl: './chips.component.html',
-  styleUrl: './chips.component.css'
+  styleUrl: './chips.component.css',
+  
+
 })
 export class ChipsComponent {
   @Input() text1: string = "Chip um";
@@ -16,3 +18,7 @@ export class ChipsComponent {
   @Input() text2: string = "Chip dois";
   @Input('bg-color') bgColor1: string = "#839fc7";
 }
+
+
+
+
