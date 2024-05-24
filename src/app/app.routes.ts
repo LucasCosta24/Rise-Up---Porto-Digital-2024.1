@@ -10,13 +10,14 @@ import { InputbuttonComponent } from './components/inputbutton/inputbutton.compo
 import { ButtonComponent } from './components/button/button.component';
 import { SelectComponent } from './components/select/select.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
+import { InputPageComponent } from './pages/input-page/input-page.component';
 
 
 export const routes: Routes = [
     { path: 'button', component: ButtonComponent},
     { path: 'card', component: CardPageComponent},
     { path: 'chip', component: ChipsComponent},
-    { path: 'text-input', component: InputTextComponent},
+    { path: 'text-input', component: InputPageComponent},
     { path: 'button-input', component: InputbuttonComponent},
     { path: 'list', component: ListComponent},
     // { path: 'modal', component: TableComponent},

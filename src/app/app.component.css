@@ -5,3 +5,7 @@
     font-style: normal;
     box-sizing: border-box;
 }
+
+.content {
+    margin-left: 30%;
+}
