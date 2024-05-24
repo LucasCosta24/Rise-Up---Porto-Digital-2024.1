@@ -11,6 +11,8 @@ import {MatChipsModule} from '@angular/material/chips';
   styleUrl: './chips.component.css'
 })
 export class ChipsComponent {
-  @Input() text: string = "Static Chips";
+  @Input() text1: string = "Chip um";
   @Input('bg-color') bgColor: string = "#dce0dd ";
+  @Input() text2: string = "Chip dois";
+  @Input('bg-color') bgColor1: string = "#839fc7";
 }
