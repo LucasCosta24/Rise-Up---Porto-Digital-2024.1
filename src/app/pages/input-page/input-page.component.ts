@@ -11,5 +11,5 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
   styleUrl: './input-page.component.css'
 })
 export class InputPageComponent {
-  codeForHTMLInp = ` <app-inputText type = 'date' />`
+  codeForHTML = ` <app-inputText type = 'date' />`
 }

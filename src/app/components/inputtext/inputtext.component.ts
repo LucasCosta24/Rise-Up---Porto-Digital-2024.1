@@ -10,6 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class InputTextComponent {
   @Input() type: string = "text";
-  @Input() date: string = "text";
-  @Input() password: string = "text";
+  @Input() text: string = "Texto padrão";
 }

@@ -14,7 +14,7 @@ import 'highlight.js/styles/androidstudio.min.css';
 })
 export class CardPageComponent {
   @Input() longText: string = "Conteúdo do card";
-  codeForHTML = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  codeForHTML: string = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <div class="card">
   
