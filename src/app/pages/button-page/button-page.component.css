@@ -1,0 +1,197 @@
+.app-component-viewer {
+    font-weight: 400;
+    width: calc(100% - 341px);
+    padding: 20px 50px;
+}
+
+.list {
+    font-size: large;
+    padding: 15px;
+}
+
+.app-title {
+    font-size: xx-large;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container {    
+    display: block;
+    border: solid gray 1px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.list {
+    padding: 20px;
+    background-color: white;
+    font-style: none;
+    list-style: none;
+}
+
+.ordenada-list {
+    padding: 25px;
+    background-color: white;
+    font-style: none;
+    list-style: decimal;
+}
+
+.ul_title {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.li {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.html-codigo,
+.css-codigo {
+    align-items: center;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title-codigo {
+    font-size: large;
+    font-weight: bolder;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+.title-codigo2 {
+    font-size: large;
+    font-weight: bolder;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+
+code {
+    font-size: large;
+}
+
+.out-code {
+    background-color: plum;
+}
+
+div.example-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+div.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    margin-bottom: 10px, 10px;
+}
+
+.li-button-example {
+    padding: 20px;
+    border: 5px solid black;
+    font-size: large;
+    background-color: rgb(31, 173, 255);
+    border-radius: 30px;
+}
+
+.li-button-example:hover {
+    cursor: pointer;
+    color: rgb(45, 10, 247);
+    background-color: rgb(0, 123, 255);
+}
+
+.button {
+    display: inline-block;
+    padding: 17px 34px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.button.default {
+    color: #000000;
+    background-color: #c0deff;
+    border: 2px solid #000000;
+}
+
+.button.default:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+button.thin {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    background-color: #fff;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.basic {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    background-color: #fff;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.basic.disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+a.thin.basic {
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+a.thin.basic.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.container-3 {    
+    display: block;
+    border: solid rgb(0, 0, 0) 1px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 30%;
+    margin-bottom: 20px; 
+}

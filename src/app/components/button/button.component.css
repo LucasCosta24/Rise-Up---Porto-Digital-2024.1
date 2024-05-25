@@ -30,7 +30,7 @@
     box-sizing: border-box;
     border-radius: 20px;
     width: 80%;
-    margin-bottom: 20px; /* Adicionando margem inferior para separar os containers */
+    margin-bottom: 20px; 
 }
 
 .list {

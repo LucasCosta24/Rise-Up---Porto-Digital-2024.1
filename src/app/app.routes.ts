@@ -7,7 +7,7 @@ import { TableComponent } from './components/table/table.component';
 import { ChipsComponent } from './components/chips/chips.component';
 import { InputTextComponent } from './components/inputtext/inputtext.component';
 import { InputbuttonComponent } from './components/inputbutton/inputbutton.component';
-import { ButtonComponent } from './components/button/button.component';
+import { ButtonComponent } from './pages/button-page/button-page.component';
 import { SelectComponent } from './components/select/select.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
