@@ -12,6 +12,7 @@ import { SelectComponent } from './components/select/select.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
+import { DefaultPageComponent } from './pages/default-page/default-page.component';
 
 
 export const routes: Routes = [
@@ -24,6 +25,7 @@ export const routes: Routes = [
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
     { path: 'table', component: TableComponent},
+    { path: 'default', component: DefaultPageComponent}
 ];
 
 @NgModule({
