@@ -25,7 +25,7 @@ export const routes: Routes = [
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
     { path: 'table', component: TableComponent},
-    { path: 'default', component: DefaultPageComponent}
+    { path: '', component: DefaultPageComponent}
 ];
 
 @NgModule({
