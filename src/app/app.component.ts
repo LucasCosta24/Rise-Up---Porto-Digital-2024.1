@@ -14,6 +14,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
+import { ListPageComponent } from './pages/list-page/list-page.component';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +33,8 @@ import { InputPageComponent } from './pages/input-page/input-page.component';
             SelectComponent,
             ButtonComponent,
             ModaisComponent,
-            InputPageComponent],
+            InputPageComponent,
+            ListPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

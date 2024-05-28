@@ -13,6 +13,7 @@ import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
 import { DefaultPageComponent } from './pages/default-page/default-page.component';
+import { ListPageComponent } from './pages/list-page/list-page.component';
 
 
 export const routes: Routes = [
@@ -21,7 +22,7 @@ export const routes: Routes = [
     { path: 'chip', component: ChipsComponent},
     { path: 'text-input', component: InputPageComponent},
     { path: 'button-input', component: InputbuttonComponent},
-    { path: 'list', component: ListComponent},
+    { path: 'list', component: ListPageComponent},
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
     { path: 'table', component: TableComponent},
