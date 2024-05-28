@@ -23,24 +23,14 @@
     <div class="title"> Lista Simples </div>
     </div>
     
-    <span class="container">
-        <div class="title-codigo">HTML</div>
-        <code class="language-html">
-            <span class="html-codigo">
-                
-                <span>
-                    &lt;<span>ul role="list" class="list"</span>&gt;
-                    <br>
-                </span>
-                    &lt;<span>li class="li">Item 1</span>&lt;<span>/li</span>&gt;
-                    <br>
-                    &lt;<span>li class="li">Item 2</span>&lt;<span>/li</span>&gt;
-                    <br>
-                    &lt;<span>li class="li">Item 3</span>&lt;<span>/li</span>&gt;
-                    <br>
-                    <span>&lt;/ul&gt;</span>
-            </span>
-        </code>
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
     </span>
     
     <div class="content">
@@ -57,20 +47,27 @@
     </div>
     
     <span class="container">
-        <!--Colar aqui-->
+        <app-list type = 'ordenada'></app-list>
     </span>
     <br>
-    <span class="container">
-        <div class="title-codigo">CSS</div>
-        <span class="css-codigo">
-            <code>
-                .list &#123; 
-                <br>
-                list-style: decimal;
-                <br>
-                &#125;
-            </code>
-        </span>
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML2"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    <br>
+    <div class="title-codigo">CSS:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="CSS"
+                  language="css"
+                  lineNumbers></code>
+          </pre>
     </span>
     <div class="content">
         <p>As listas podem ser apresentadas de diferentes formas a partir desse princípio, outros exemplos:</p>
@@ -93,57 +90,29 @@
     </div>
     
     <span class="container">
-        <!--Colar Aqui-->
+        <app-list type="Aninhada"></app-list>
+    </span>
+    <br>
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML3"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
     </span>
     <br>
     <span class="container">
-        <div class="title-codigo">HTML</div>
-        <code class="language-html">
-            <span class="html-codigo">
-                <span>
-                    <span>&lt;ul role="list" class="list"&gt;</span>
-                    <br>
-                </span>
-                    <span>&lt;li class="li">Item 1</span>&lt;<span>/li&gt;</span>
-                    <br>
-                    <span>&lt;li class="li">Item 2</span>&lt;<span>/li&gt;</span>
-                    <br>
-                    &lt;<span>ul&gt; 
-                    <br>
-                        <span>
-                            <span>&lt;li class="li2">Item 2.1</span>&lt;<span>/li&gt;</span>
-                        </span>
-                        <br>
-                        <span>
-                            <span>&lt;li class="li2">Item 2.2</span>&lt;<span>/li&gt;</span>
-                        </span>
-                        <br>
-                        &lt;/ul</span>&gt;
-                    <br>
-                    &lt;<span>li class="li">Item 3</span>&lt;<span>/li</span>&gt;
-                    <br>
-                    <span>&lt;/ul&gt;</span>
-            </span>
-        </code>
+        <div class="title-codigo">CSS:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="CSS2"
+                  language="css"
+                  lineNumbers></code>
+          </pre>
     </span>
-    <br>
-    <span class="container">
-        <div class="title-codigo">CSS</div>
-        <span class="css-codigo">
-            <code>
-                .list &#123; 
-                <br>
-                list-style: none;
-                <br>
-                &#125;
-                <br>
-                .li2 &#123; 
-                <br>
-                list-style: none;
-                <br>
-                &#125;
-            </code>
-        </span>
     </span>
     
     <div class="content">
@@ -156,60 +125,28 @@
     </div>
     
     <span class="container">
-        
+        <app-list type="botoes"></app-list>
     </span>
     <br>
     
-    <span class="container">
-        <div class="title-codigo">HTML</div>
-        <code class="language-html">
-            <span class="html-codigo">
-                <span>
-                    <span>&lt;ul role="list" class="list"&gt;</span>
-                    <br>
-                </span>
-                    <span>&lt;li class="li">
-                        <br>
-                        &lt;button class="li-button-example"&gt;Botão 1&lt;/button&gt;
-                        <br>
-                    </span>&lt;<span>/li&gt;</span>
-                    <br>
-                    <span>&lt;li class="li">
-                        <br>
-                        &lt;button class="li-button-example"&gt;Botão 2&lt;/button&gt;
-                        <br>
-                    </span>&lt;<span>/li&gt;</span>
-                    <br>
-                    &lt;<span>li class="li">
-                        <br>
-                        &lt;button class="li-button-example"&gt;Botão 3&lt;/button&gt;
-                        <br>
-                    </span>&lt;<span>/li</span>&gt;
-                    <br>
-                    <span>&lt;/ul&gt;</span>
-            </span>
-        </code>
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML4"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
     </span>
     <br>        
-    <span class="container">
-        <div class="title-codigo">CSS</div>
-        <span class="css-codigo">
-            <code>
-                .li-button-example &#123; <br>
-                    padding: 10px; <br>
-                    border: 1px solid black; <br>
-                    font-size: large; <br>
-                    background-color: white; <br>
-                    border-radius: 20px; <br>
-                &#125; <br>
-                
-                .li-button-example:hover &#123; <br>
-                    cursor: pointer; <br>
-                    color: white; <br>
-                    background-color: rgb(0, 123, 255); <br>
-                &#125; <br>
-            </code>
-        </span>
+    <div class="title-codigo">CSS:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="CSS3"
+                  language="css"
+                  lineNumbers></code>
+          </pre>
     </span>
     
 </div>

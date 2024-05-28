@@ -28,7 +28,7 @@
     border: solid gray 1px;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 .list {
@@ -74,7 +74,7 @@
 }
 
 .title-codigo {
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
     padding-left: 35px;
     padding-top: 15px;
