@@ -1,15 +1,9 @@
-<div class="app-component-viewer">
-  <div class="content">
-   <h1 class="app-title">Table:</h1>
 
-   <div>
-    As tabelas HTML são elementos fundamentais na construção de páginas web, pois permitem organizar e apresentar dados de forma clara, concisa e informativa. Elas são utilizadas em diversos contextos, desde a exibição de listas de produtos em lojas online até a apresentação de resultados de pesquisas em sites científicos.
-</div>
-</div>
+  
 
 <!-- Começo da Tabela-->
-<span class="container">
-<table class="table-example" cdk-table [dataSource]="dataSource">
+
+<table *ngIf="type == 'simple'" class="table-example" cdk-table [dataSource]="dataSource">
  
     <!-- Posição Column -->
     <ng-container cdkColumnDef="posicao">
@@ -32,172 +26,11 @@
     <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
     <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-</span>
-<!--Fim da Tabela-->>
+
+<!--Fim da Tabela-->
 
 
-<!--Codigo EXPLICATIVO HTML-->
-  <span class="container">
-    <div class="title-codigo">HTML</div>
-    <code class="language-html">
-        <span class="html-codigo">
-            
-            <span>
-                <span>&lt;table class="table-example" cdk-table [dataSource]="dataSource"&gt;</span>
-                <br>
-            </span>
-                <span>&lt;ng-container cdkColumnDef="posicao"&gt;</span>
-                <br>
-                <span>&lt;th cdk-header-cell *cdkHeaderCellDef> No. &gt;</span> <span>&lt;/th&gt;</span>
-                <br>
-                <span>&lt;td cdk-cell *cdkCellDef="let element"&gt;</span> <span>&#123;&#123;element.posicao&#125;</span><span>&lt;/th&gt;</span>
-                <br>
-                <span>/ng-container</span>
-                <br>
-                <br>
-                <span>&lt;ng-container cdkColumnDef="nome"&gt;</span>
-                <br>
-                <span>&lt;th cdk-header-cell *cdkHeaderCellDef> Nome &gt;</span> <span>&lt;/th&gt;</span>
-                <br>
-                <span>&lt;td cdk-cell *cdkCellDef="let element"&gt;</span> <span>&#123;&#123;element.nome&#125;</span><span>&lt;/th&gt;</span>
-                <br>
-                <span>/ng-container</span>
-                <br>
-                <br>
-                <span>&lt;ng-container cdkColumnDef="cor"&gt;</span>
-                <br>
-                <span>&lt;th cdk-header-cell *cdkHeaderCellDef> Cor &gt;</span> <span>&lt;/th&gt;</span>
-                <br>
-                <span>&lt;td cdk-cell *cdkCellDef="let element"&gt;</span> <span>&#123;&#123;element.cor&#125;</span><span>&lt;/th&gt;</span>
-                <br>
-                <span>/ng-container</span>
-                <br>
-                <br>
-                <span>/table</span>
-        </span>
-    </code>
-</span>
-<div class="content">
-  <div class="title"> Code: </div>
-  </div>
-<div class="content">
-  <p>
-    O TypeScript aprimora a funcionalidade das tabelas HTML possibilitando a manipulação e interação dinâmica de dados. Você pode vincular dados de arrays ou objetos JavaScript às células da tabela, permitindo atualizações em tempo real e interações do usuário.
-  </p>
-</div>
-<!--Codigo EXPLICATIVO TS-->
-<span class ="container">
-  <div class="title-codigo">TS</div>
-  <code class="language-ts"></code>
-  <span class="ts-codigo">
-<span>export interface ColorNumbers &#123;</span>
-<br>
-<span>nome: string;</span>
-<br>
-<span>posicao: number;</span>
-<br>
-<span>cor: string;</span>
-<br>
-<span>&#125;</span>
-<br>
-<span>const COLOR_DATA: ColorNumbers[] = [</span>
-<br>
-<span>&#123;posicao: 1, nome: 'Um', cor: 'Vermelho'&#125;,</span>
-<br>
-<span>&#123;posicao: 2, nome: 'Dois', cor: 'Amarelo'&#125;,</span>
-<br>
-<span>&#123;posicao: 3, nome: 'Três', cor: 'Azul'&#125;,</span>
-<br>
-<span>&#123;posicao: 4, nome: 'Quatro', cor: 'Verde'&#125;,</span>
-<br>
-<span>&#123;posicao: 5, nome: 'Cinco', cor: 'Roxo'&#125;,</span>
-<br>
-<span>&#123;posicao: 6, nome: 'Seis', cor: 'Laranja'&#125;,</span>
-<br>
-<span>];</span>
-<br>
-<span>&#64;Component&#40;&#123;</span>
-<br>
-<span>selector: 'app-table',</span>
-<br>
-<span>styleUrl: 'table.component.css',</span>
-<br>
-<span>templateUrl: 'table.component.html',</span>
-<br>
-<span>standalone: true,</span>
-<br>
-<span>imports: [CdkTableModule],</span>
-<br>
-<span>&#125;&#41;</span>
-<br>
-<span>expor class TableComponent &#123;</span>
-<br>
-<span>displayedColumns: string[] = ['posicao', 'nome', 'cor'];</span>
-<br>
-<span>dataSource = new ExampleDataSource();</span>
-<br>
-<span>&#125;</span>
-<br>
-<br>
-<span>export class ExampleDataSource extends DataSource&lt;ColorNumbers&gt; &#123;</span>
-<br>
-<br>
-<span>data = new BehaviorSubject&lt;ColorNumbers[]&gt;(COLOR_DATA);</span>
-<br>
-<br>
-<span>connect(): Observable&lt;ColorNumbers[]&gt; &#123;</span>
-<br>
-<span> return this.data;</span>
-<br>
-<span>&#125;</span>
-<br>
-<br>
-<span>disconnect() &#123;&#125;</span>
-<br>
-<span>&#125;</span>
-
-</span>
-</span>
-
-<br>
-<!--Codigo EXPLICATIVO CSS-->
-<span class="container">
-  <div class="title-codigo">CSS</div>
-  <span class="css-codigo">
-      <code>
-        .table-example&#123;
-        <br>
-          padding-left: 4rem;
-          <br>
-          &#125;
-          <br>
-          table &#123;
-          <br>
-              width: 100%;
-              <br>
-            &#125;
-      </code>
-  </span>
-</span>
-
-<!--Explicações de outras feats-->
-
-<div class="content">
-  <div class="title"> Tags Estruturais De Uma Tabela : </div>
-  </div>
-
-<div class="content">
-  <p>
-    a estrutura básica de uma tabela consiste nas tags <code class="out-code">&lt;tr&gt;</code>, <code class="out-code">&lt;td&gt;</code> e as células de título <code class="out-code">&lt;th&gt;</code>. Porém, além dessas, também há tags que servem para estruturar melhor a tabela. São elas:
-  </p>
-  <br>
-  <p><code class="out-code">&lt;thead&gt;&lt;/thead&gt;</code> – Esta tag representa o cabeçalho da tabela, geralmente composta por células título.</p>
-    <p><code class="out-code">&lt;tbody&gt;&lt;/body&gt;</code>– Essa tag representa o corpo da tabela;</p>
-      <p><code class="out-code">&lt;tfoot&gt;&lt;/tfoot&gt;</code>– Essa tag representa o rodapé da tabela.</p>
-        <p>essas tags tem como principal efeito manter uma semântica adequada para suas tabelas.</p>
-</div>
-
-<table border="1">
+<table *ngIf="type == 'estrutural'" border="1">
   <thead>
   <tr>
       <th>titulo 1</th>
@@ -224,14 +57,3 @@
   </tfoot>
 </table>
 
-<!--<span class="container">
-  <div class="title-codigo">HTML da tabela</div>
-  <code class="language-html">
-      <span class="html-codigo">!
-
-
-  </span>
-  </code>
-  </span>-->
-
-</div>
