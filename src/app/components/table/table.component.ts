@@ -1,7 +1,8 @@
 import {DataSource} from '@angular/cdk/collections';
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {CdkTableModule} from '@angular/cdk/table';
 import {BehaviorSubject, Observable} from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 export interface ColorNumbers {
   nome: string;
@@ -25,11 +26,14 @@ const COLOR_DATA: ColorNumbers[] = [
   styleUrl: 'table.component.css',
   templateUrl: 'table.component.html',
   standalone: true,
-  imports: [CdkTableModule],
+  imports: [CdkTableModule, CommonModule],
 })
 export class TableComponent {
   displayedColumns: string[] = ['posicao', 'nome', 'cor'];
   dataSource = new ExampleDataSource();
+  @Input() type: string = "text";
+  
+
 }
 
 export class ExampleDataSource extends DataSource<ColorNumbers> {

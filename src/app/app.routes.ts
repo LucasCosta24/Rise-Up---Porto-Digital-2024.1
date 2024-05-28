@@ -14,6 +14,7 @@ import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
 import { DefaultPageComponent } from './pages/default-page/default-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
+import { TablePageComponent } from './pages/table-page/table-page.component';
 
 
 export const routes: Routes = [
@@ -25,7 +26,7 @@ export const routes: Routes = [
     { path: 'list', component: ListPageComponent},
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
-    { path: 'table', component: TableComponent},
+    { path: 'table', component: TablePageComponent},
     { path: '', component: DefaultPageComponent}
 ];
 
