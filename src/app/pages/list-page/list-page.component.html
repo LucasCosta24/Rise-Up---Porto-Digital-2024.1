@@ -1,0 +1,152 @@
+<div class="app-component-viewer">
+    <div class="content">
+        <h1 class="app-title">List:</h1>
+        <div>
+            Em HTML, a tag <code class="out-code">&lt;ul&gt;</code> representa uma lista não ordenada. 
+            Ela é utilizada para criar uma lista de itens onde a ordem não possui relevância específica. 
+            Cada item dentro da lista não ordenada é definido utilizando a tag <code class="out-code">&lt;li&gt;</code> (item da lista).
+        </div>
+    </div>
+    
+    <span class="container">
+        <app-list type = 'simples'></app-list>
+    </span>
+
+    <div class="content">
+        <p>
+            Por padrão, os navegadores da web exibirão listas não ordenadas com marcadores (geralmente círculos, quadrados ou discos).
+            É possível   estilizar esses marcadores usando CSS se desejar uma aparência diferente.
+        </p>
+    </div>
+    
+    <div class="content">
+    <div class="title"> Lista Simples </div>
+    </div>
+    
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    
+    <div class="content">
+    <p>
+        Se for necessário inserir apenas uma linha individual de texto lista,
+        o texto pode ser inserido diretamente no elemento <code class="out-code">&lt;ul&gt;</code>.
+    </p>
+    <div class="title"> Estilização de Listas </div>
+    
+    <p>Listas podem ser ter diferentes estilos como ordenadas por números decimais, romanos, simbolos
+        e etc. Exemplo de lista com estilo de números decimais:
+    </p>
+    
+    </div>
+    
+    <span class="container">
+        <app-list type = 'ordenada'></app-list>
+    </span>
+    <br>
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML2"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    <br>
+    <div class="title-codigo">CSS:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="CSS"
+                  language="css"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    <div class="content">
+        <p>As listas podem ser apresentadas de diferentes formas a partir desse princípio, outros exemplos:</p>
+        <br>
+        <p><code class="out-code">list-style: none;</code> Estiliza a lista sem símbolos.</p>
+        <p><code class="out-code">list-style: square;</code> Estiliza a lista por símbolos em formato de quadrado.</p>
+        <p><code class="out-code">list-style: circle;</code> Estiliza a lista por símbolos em formato circular.</p>
+        <p><code class="out-code">list-style: upper-roman;</code> Estiliza a lista por símbolos em algarismo romano.</p>
+        <p><code class="out-code">list-style: url;</code> Estiliza a lista por símbolo externo inserido via <code>url()</code>.</p>
+    </div>
+    
+    <div class="content">
+    <div class="title">Lista Aninhada</div>
+    
+    <p>
+        Uma lista aninhada em HTML permite criar subníveis de hierarquia dentro de listas não ordenadas <code class="out-code">&lt;ul&gt;</code> ou ordenadas <code class="out-code">&lt;ol&gt;</code>.
+        Isso é útil para organizar informações complexas de forma estruturada e facilitar a compreensão do usuário.
+    </p>
+    
+    </div>
+    
+    <span class="container">
+        <app-list type="Aninhada"></app-list>
+    </span>
+    <br>
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML3"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    <br>
+    <span class="container">
+        <div class="title-codigo">CSS:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="CSS2"
+                  language="css"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    </span>
+    
+    <div class="content">
+        <div class="title">Lista de Botões</div>
+        <p>
+            Criar uma lista de botões em HTML envolve combinar as tags <code class="out-code">&lt;ul&gt;</code> (lista não ordenada) ou <code class="out-code">&lt;ol&gt;</code> (lista ordenada) com a tag <code class="out-code">&lt;li&gt;</code> (item da lista) para definir cada botão. 
+            Dentro de cada <code class="out-code">&lt;li&gt;</code>, você pode usar a tag <code class="out-code">&lt;button&gt;</code> para criar o botão propriamente dito. 
+            Aqui está um exemplo básico:
+        </p>
+    </div>
+    
+    <span class="container">
+        <app-list type="botoes"></app-list>
+    </span>
+    <br>
+    
+    <div class="title-codigo">HTML:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="codeForHTML4"
+                  language="html"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    <br>        
+    <div class="title-codigo">CSS:</div> <br>
+    <span class="container" style="background-color: #282b2e;">
+        <pre class="pre">
+            <code class="code"
+                  [highlight]="CSS3"
+                  language="css"
+                  lineNumbers></code>
+          </pre>
+    </span>
+    
+</div>
