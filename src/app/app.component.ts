@@ -15,6 +15,8 @@ import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
