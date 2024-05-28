@@ -1,109 +1,204 @@
 
-<div class="app-component-viewer">
-    <div class="content">
-      <h1 class="app-title">Chip:</h1>
-      <p>
-        Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação. 
-        Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar 
-        entradas de usuário, tais como seleções, contatos, ou filtros.
-      </p>
-    </div>
-    
-    <span>
-      <div class="content">
-        <div class="title">Chip Estático</div>
-      </div>
-    </span>
-  
-    <span class="container">
-      <div class="contenti">
-        <div class="chip" [ngStyle]="{'background-color': bgColor}">
-          <div>{{text1}}</div>
-        </div>
-        <div class="chip1" [ngStyle]="{'background-color': bgColor1}">
-          <div>{{text2}}</div>
-        </div>
-      </div>
-    </span>
-    
-    <div class="content">
-      <p>
-        Se refere a um tipo de chip que exibe informações estáticas e não interativas. 
-        Esses chips podem ser úteis para mostrar informações que não precisam de 
-        interação do usuário, como tags ou rótulos.
-      </p>
-    </div>
-  </div>
-  
-  
-  
-  <div>
-    <span class="container-html">
-     <div class="title-codigo">HTML</div>
-       <code class="language-html">
-          <div class="html-codigo">
-            <code>
-                &emsp;&lt;div class="chip"&gt;[ngStyle]="&#123;'background-color': bgColor &#125;"<br>
-            &emsp;&lt;div&gt; &#123; &#123;text1&#125; &#125; &emsp;&lt;/div&gt;<br>
-                &emsp;&lt;/div&gt;
-            </code>
-          </div>
-        </code>
-    </span>
-  </div>
-
-  <br>
-  <br>     
-
-    <span class="container-css">
-      <div class="title-codigo">CSS</div>
-        <code class="language-html">   
-          <div class="css-codigo">
-            <code>
-              .chip&#123;<br>
-              display: inline-block;<br>
-              height: 32px;<br>
-              font-size: 14px;<br>
-              line-height: 32px;<br>
-              border-radius: 16px;<br>
-              background-color: #e0e0e0;<br>
-              margin: 5px;<br>
-              &#125;<br>
-            </code>
-          </div>
-        </code>
-    </span>
-      
-    <br>
-    <br>  
-
-   <span class="container-TS">
-      <div class="title-codigo">TS</div>
-        <code class="language-html">   
-          <div class="TS-codigo">
-           <code>
-            &#64;Input() text1: string = "Chip um";<br>
-            &#64;Input('bg-color') bgColor: string = "#dce0dd ";<br>
-          </code>
-        </div>
-      </code>
-  </span>
-
-  <br>
-  <br>
-
-  
-  <head>
+<head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chip1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chip Component</title>
     <link rel="stylesheet" href="chips.component.css">
-     </head>
-    <body>
-      <!-- codigo que ficara nesse html -->
-      <div class="chip" (click)="handleClick()">
-        <div class="chip12" #chip>Digite</div>
-      </div>
-       <!-- final do codigo que ficara nesse html -->
+</head>
+<body>
+    <div class="app-component-viewer">
+        <div class="content">
+            <h1 class="app-title">Chip:</h1>
+            <p>
+                Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação. 
+                Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar 
+                entradas de usuário, tais como seleções, contatos, ou filtros.
+            </p>
+        </div>
+        
+        <div class="content">
+            <div class="title">Chip Estático</div>
+        </div>
+      
+        <div class="container">
+            <div class="contenti">
+                <div class="chip" [ngStyle]="{'background-color': bgColor}">
+                    <div>{{text1}}</div>
+                </div>
+                <div class="chip1" [ngStyle]="{'background-color': bgColor1}">
+                    <div>{{text2}}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <p>
+                Se refere a um tipo de chip que exibe informações estáticas e não interativas. 
+                Esses chips podem ser úteis para mostrar informações que não precisam de 
+                interação do usuário, como tags ou rótulos.
+            </p>
+        </div>
+      
+        <div>
+            <span class="container-html">
+                <div class="title-codigo">HTML</div>
+                <code class="language-html">
+                    <div class="html-codigo">
+                        <code>
+                            &lt;div class="chip" [ngStyle]="{{ '{' }}'background-color': bgColor{{ '}' }}"&gt;<br>
+                            &emsp;&lt;div&gt;{{text1}}&lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                </code>
+            </span>
+        </div>
+      
+        <br><br>     
+      
+        <span class="container-css">
+            <div class="title-codigo">CSS</div>
+            <code class="language-html">   
+                <div class="css-codigo">
+                    <code>
+                        .chip &#123;<br>
+                        &emsp;display: inline-block;<br>
+                        &emsp;height: 32px;<br>
+                        &emsp;font-size: 14px;<br>
+                        &emsp;line-height: 32px;<br>
+                        &emsp;border-radius: 16px;<br>
+                        &emsp;background-color: #e0e0e0;<br>
+                        &emsp;margin: 5px;<br>
+                        &#125;<br>
+                    </code>
+                </div>
+            </code>
+        </span>
+          
+        <br><br>  
+      
+        <span class="container-TS">
+            <div class="title-codigo">TS</div>
+            <code class="language-html">   
+                <div class="TS-codigo">
+                    <code>
+                        &#64;Input() text1: string = "Chip um";<br>
+                        &#64;Input('bg-color') bgColor: string = "#dce0dd";<br>
+                    </code>
+                </div>
+            </code>
+        </span>
+      
+        <br><br>
+
+        <div class="title">Chip Modificável</div>
+
+        <br>
+
+        <span class="container-chip3">
+          <div class="contenti">
+            <!-- codigo que ficara nesse html -->
+              <div class="chip" (click)="handleClick()">
+                  <div class="chip12" #chip>Digite</div>
+              </div>
+              <!-- final do codigo que ficara nesse html -->
+          </div>
+      </span>
+      
+
+            <p>
+                Se refere a um tipo de chip que exibe informações Modificáveis.<br>
+                Diferente do anterior, esse chip pode ser alterado pelo usuário<br>
+                de forma dinâmica.
+            </p>
+        </div>
+
+       
+        <div>
+            <span class="container-html">
+                <div class="title-codigo">HTML</div>
+                <code class="language-html">
+                    <div class="html-codigo">
+                        <code>
+                            &lt;div class="chip"(click)="handleClick()"&gt;<br>
+                            &emsp;&lt;div "chip12" #chip&gt;Digite&lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+                    </div>
+                </code>
+            </span>
+        </div>
+<br><br>
+        <span class="container-css">
+            <div class="title-codigo">CSS</div>
+            <code class="language-html">   
+                <div class="css-codigo">
+                    <code>
+                        .chip &#123;<br>
+                        &emsp;display: inline-block;<br>
+                        &emsp;padding: 0 10px;<br>
+                        &emsp;height: 32px;<br>
+                        &emsp;font-size: 14px;<br>
+                        &emsp;line-height: 32px;<br>
+                        &emsp;border-radius: 16px;<br>
+                        &emsp;border: 1px solid #fb9127;<br>
+                        &emsp;background-color: #ee8e11;<br>
+                        &emsp;margin: 5px;<br>
+                        &emsp; margin-right: 10px;<br>
+                        &emsp;margin-bottom: 10px;<br>
+                        &emsp;font-family: Arial, sans-serif;<br>
+                        &emsp;cursor: pointer;<br>
+                        &#125;<br>
+                    </code>
+                </div>
+            </code>
+        </span>
+<br>
+        <span class="container-TS2">
+            <div class="title-codigo">TS</div>
+          <code class="language-html">   
+                <div class="TS-codigo">
+                    <code>
+                        &#64;ViewChild('chip') chipRef: ElementRef|undefined;<br>
+                        &#64;handleClick() &#123; <br>
+                        &nbsp;&nbsp;const newName = prompt('Digite um novo nome para o chip:');<br>
+                        &nbsp;&nbsp;if (newName !== null && newName.trim() !== '') &#123;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;const limiteCaracteres = 12;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if(newName.trim().length > limiteCaracteres)&#123;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(`Por favor, digite no máximo $&#123;limiteCaracteres&#125; caracteres.`);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#125;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if (newName.trim() !== '') &#123;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(this.chipRef?.nativeElement);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (this.chipRef) &#123;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.chipRef.nativeElement.innerHTML = newName;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br>
+                        &nbsp;&nbsp;&#125;<br>
+                        &nbsp;&nbsp;console.log(this.chipRef!.nativeElement);<br>
+                        &nbsp;&nbsp;this.chipRef!.nativeElement.innerHTML = newName;<br>
+                        &#125;
+                    </code>
+                </div>
+          </code>
+        </span>
+
+<br><br><br><br>
+
+        <div id="chipContainer">
+            <div class="chip4">
+                <span class="chipName" onclick="editChip(this)">Clique para alterar</span>
+                <span class="closebtn" onclick="removeChip(this)">&times;</span>
+            </div>
+            <span class="addChip" onclick="addNewChip()">+</span>
+        </div>
+     
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p>Nome do Chip: <input type="text" id="newChipName"></p>
+                <button onclick="saveChipName()">Salvar</button>
+            </div>
+
     <script src="script.js"></script>
-    </body>
+
+

@@ -12,7 +12,7 @@ import {MatChipsModule} from '@angular/material/chips';
 })
 export class ChipsComponent {
   @Input() text1: string = "Chip um";
-  @Input('bg-color') bgColor: string = "#dce0dd ";
+  @Input('bg-color') bgColor: string = "#eba146";
   @Input() text2: string = "Chip dois";
   @Input('bg-color') bgColor1: string = "#839fc7";
 
@@ -22,7 +22,7 @@ export class ChipsComponent {
   handleClick() {
     const newName = prompt('Digite um novo nome para o chip:');
     if (newName !== null && newName.trim() !== '') {
-      const limiteCaracteres = 10;
+      const limiteCaracteres = 12;
 
       if(newName.trim().length > limiteCaracteres){
         alert(`Por favor, digite no máximo ${limiteCaracteres} caracteres.`);
@@ -40,8 +40,10 @@ export class ChipsComponent {
       console.log(this.chipRef!.nativeElement); 
       this.chipRef!.nativeElement.innerHTML = newName;
     }
-    
-  }
+
+    }
+
+
 
 
 

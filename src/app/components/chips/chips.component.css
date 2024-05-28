@@ -1,12 +1,17 @@
 .chip {
-  display: inline-block;
+  display: inline-block;        
   padding: 0 10px;
   height: 32px;
   font-size: 14px;
   line-height: 32px;
   border-radius: 16px;
-  background-color: #e0e0e0;
+  border: 1px solid #fb9127;
+  background-color: #ee8e11;
   margin: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
 }
 
 .chip1 {
@@ -18,12 +23,12 @@
   border-radius: 16px;
   background-color: #839fc7;
   margin: 5px;
+  cursor: pointer;
 }
-
 
 .app-component-viewer {
   font-weight: 400;
-  width: calc(100% - 341px);
+  width: calc(100% - 100px);
   padding: 20px 50px;
 }
 
@@ -36,16 +41,15 @@
   font-size: xx-large;
 }
 
-.container {    
+.container {
   display: block;
   border: solid gray 1px;
   box-sizing: border-box;
   border-radius: 20px;
-  width: 80%;
-  margin-left: auto;
+  width: 50%;
+  margin-left: 5%;
   margin-right: auto;
   padding: 10px;
-
 }
 
 .code_title {
@@ -55,44 +59,26 @@
   font-size: 18px;
 }
 
-
-
 .chip-container {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-.contenti{
+.contenti {
   width: 100%;
   text-align: center;
 }
 
-.title{
+.title {
   font-size: x-large;
   font-weight: bolder;
 }
 
-.html-codigo {
+.html-codigo, .css-codigo, .TS-codigo {
   align-items: center;
   display: block;
   padding: 15px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.css-codigo {
-  align-items: center;
-  display: block;
-  padding: 20px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.TS-codigo{
-  align-items: center;
-  display: block;
-  padding: 20px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -108,56 +94,126 @@ code {
   font-size: large;
 }
 
-.out-code{
+.out-code {
   background-color: plum;
 }
 
-.container-html{
- display: block;
+.container-html, .container-css, .container-TS, .container-chip3{
+  display: block;
   border: solid gray 1px;
   box-sizing: border-box;
   border-radius: 20px;
   width: 50%;
   margin-left: 10%;
   margin-right: auto;
-  padding: 10px; 
-  
+  padding: 15px;
 }
 
-.container-css{
-  display: block;
-   border: solid gray 1px;
-   box-sizing: border-box;
-   border-radius: 20px;
-   width: 50%;
-   margin-left: 10%;
-   margin-right: auto;
-   padding: 1px; 
- }
 
- .container-TS{
-  display: block;
-   border: solid gray 1px;
-   box-sizing: border-box;
-   border-radius: 20px;
-   width: 50%;
-   margin-left: 10%;
-   margin-right: auto;
-   padding: 1px; 
- }
 
- .chip {
+.chip:hover {
+  background-color: #ffb578;
+}
+
+.title-codigo2 {
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 45px;
+  padding-top: 15px;
+}
+
+.chip13,.chip4 {
   display: inline-block;
-  padding: 0px 10px;
-  background-color: #e0e0e0;
+  padding: 0px 20px;
+  background-color: #f0f0f0;
   border-radius: 20px;
   border: 1px solid #ccc;
   margin-right: 10px;
   margin-bottom: 10px;
   font-family: Arial, sans-serif;
-  cursor: pointer; /* Adicionando um cursor de ponteiro para indicar que o chip é clicável */
+  cursor: pointer;
+  position: relative;
 }
 
-.chip:hover {
-  background-color: #fffefe; /* Alterando a cor de fundo quando o chip é hover */
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
 }
+
+.closebtn:hover {
+  color: #000;
+}
+
+.addChip {
+  display: inline-block;
+  padding: 0px 6px;
+  background-color: #ced1d6;
+  color: #000000;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.container-TS2{
+  display: block;
+  border: solid gray 1px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 50%; /* Ajuste a largura conforme necessário */
+  margin-left: 10%; /* Centraliza o contêiner horizontalmente */
+  margin-right: auto; /* Centraliza o contêiner horizontalmente */
+  padding: 20px; 
+  overflow: auto; /* Adiciona barras de rolagem se o conteúdo for maior que o contêiner */
+  word-wrap: break-word; /* Quebra palavras longas para se ajustarem ao contêiner */
+}
+
+/* .container-html, .container-css, .container-TS, .container-chip3{
+  display: block;
+  border: solid gray 1px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: auto;
+  padding: 15px;
+} */
