@@ -12,6 +12,7 @@ import { SelectComponent } from './components/select/select.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
+import { InputButtonPageComponent } from './pages/inputbutton-page/inputbutton-page.component';
 import { DefaultPageComponent } from './pages/default-page/default-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { TablePageComponent } from './pages/table-page/table-page.component';

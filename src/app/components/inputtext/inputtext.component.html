@@ -1,17 +1,17 @@
-<div *ngIf="type == 'text'" class="input-group">
+<div *ngIf="text == 'text'" class="input-group">
     <label for="username">{{text}}</label>
     <input type="text" id="username" name="username" required>
 </div>
 
 
-<div *ngIf="type == 'password'" class="input-group">
+<div *ngIf="password == 'password'" class="input-group">
     <label for="password">{{text}}</label>
     <input type="password" id="password" name="password" required>
 </div>
 
 
 
-<div *ngIf="type == 'date'" class="input-group">
+<div *ngIf="date == 'date'" class="input-group">
     <label for="birthdate">{{text}}</label>
     <input type="date" id="birthdate" name="birthdate" required>
 </div>

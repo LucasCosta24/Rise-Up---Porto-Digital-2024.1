@@ -11,5 +11,17 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
   styleUrl: './input-page.component.css'
 })
 export class InputPageComponent {
-  codeForHTML = ` <app-inputText type = 'date' />`
+  codeForHTMLtext = `*ngIf="type == 'text'" class="input-group">
+  <label for="username">{{text}}</label>
+  <input type="text" id="username" name="username" required>
+' />`
+
+  codeForHTMLdate = `  *ngIf="type == 'password'" class="input-group">
+  <label for="password">{{text}}</label>
+  <input type="password" id="password" name="password" required>/>`
+  
+  codeForHTMLpassword = `*ngIf="type == 'date'" class="input-group">
+  <label for="birthdate">{{text}}</label>
+  <input type="date" id="birthdate" name="birthdate" required>
+/>`
 }
