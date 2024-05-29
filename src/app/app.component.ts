@@ -17,6 +17,7 @@ import { InputPageComponent } from './pages/input-page/input-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+// src/app/app.module.ts
 
 @Component({
   selector: 'app-root',
@@ -36,7 +37,8 @@ import { BrowserModule } from '@angular/platform-browser';
             ButtonComponent,
             ModaisComponent,
             InputPageComponent,
-            ListPageComponent],
+            ListPageComponent
+            ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

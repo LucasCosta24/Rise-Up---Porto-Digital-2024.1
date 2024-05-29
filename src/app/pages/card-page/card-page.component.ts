@@ -29,8 +29,7 @@ export class CardPageComponent {
   
   </div>`;
 
-  codeForCSS = `
-  .card {
+  codeForCSS = `.card {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 30px;
