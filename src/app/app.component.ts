@@ -27,7 +27,6 @@ import { BrowserModule } from '@angular/platform-browser';
             ChipsComponent, 
             ListComponent, 
             TableComponent,
-            InputButtonPageComponent,
             InputbuttonComponent, 
             InputTextComponent,
             NavBarComponent,
