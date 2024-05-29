@@ -1,6 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { bootstrapApplication } from '@angular/platform-browser';
 
+bootstrapApplication(AppComponent)
+  .catch(err => console.error(err));
+  
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({

@@ -1,26 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button';
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 @Component({
   selector: 'app-modais',
   templateUrl: './modais.component.html',
+  styleUrls: ['./modais.component.css'],
   standalone: true,
-  imports: [MatButtonModule, MatDialogModule],
-  styleUrl: './modais.component.css'
+  imports: [CommonModule]
 })
 export class ModaisComponent {
-  constructor(public dialog: MatDialog) {}
+  mostrar: boolean = false;
 
-openDialog() {
-  const dialogRef = this.dialog.open(ModaisComponent);
-
-  dialogRef.afterClosed().subscribe(result => {
-    console.log(`Dialog result: ${result}`);
-  });
+  toggle() {
+    this.mostrar = !this.mostrar;
+  }
 }
-}
-
-
-
-

@@ -2,7 +2,7 @@
   
 
 <!-- Começo da Tabela-->
-
+<div class="qcqtq">
 <table *ngIf="type == 'simple'" class="table-example" cdk-table [dataSource]="dataSource">
  
     <!-- Posição Column -->
@@ -26,7 +26,7 @@
     <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
     <tr cdk-row *cdkRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-
+</div>
 <!--Fim da Tabela-->
 
 

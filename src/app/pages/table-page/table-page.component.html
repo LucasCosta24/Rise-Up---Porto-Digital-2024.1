@@ -10,11 +10,22 @@
   <span class="container" >
     <app-table type="simple"></app-table>
   </span>
-  <!--Fim da Tabela-->
-  
+ 
   <br>
-  <!--Codigo EXPLICATIVO HTML-->
-  <div class="title-codigo">HTML:</div> <br>
+  <div class="html-code">
+    <h2>HTML:</h2>
+    <pre class="pre">
+        <code class="code"
+              [highlight]="CodeForHTML"
+              language="ts"
+              lineNumbers></code>
+      </pre>
+</div>
+
+  <div class="content">
+    <div class="title"> Code: </div>
+    </div>
+     <div class="title-codigo">HTML:</div> <br>
   <span class="container" style="background-color: #282b2e;">
       <pre class="pre">
           <code class="code"
@@ -23,108 +34,35 @@
                 lineNumbers></code>
         </pre>
   </span>
-  <div class="content">
-    <div class="title"> Code: </div>
-    </div>
+  
+  <!--Codigo EXPLICATIVO TS-->
+  <div class="title-codigo">TS:</div>
   <div class="content">
     <p>
       O TypeScript aprimora a funcionalidade das tabelas HTML possibilitando a manipulação e interação dinâmica de dados. Você pode vincular dados de arrays ou objetos JavaScript às células da tabela, permitindo atualizações em tempo real e interações do usuário.
     </p>
-  </div>
-  <!--Codigo EXPLICATIVO TS-->
-  <span class ="container">
-    <div class="title-codigo">TS</div>
-    <code class="language-ts"></code>
-    <span class="ts-codigo">
-  <span>export interface ColorNumbers &#123;</span>
-  <br>
-  <span>nome: string;</span>
-  <br>
-  <span>posicao: number;</span>
-  <br>
-  <span>cor: string;</span>
-  <br>
-  <span>&#125;</span>
-  <br>
-  <span>const COLOR_DATA: ColorNumbers[] = [</span>
-  <br>
-  <span>&#123;posicao: 1, nome: 'Um', cor: 'Vermelho'&#125;,</span>
-  <br>
-  <span>&#123;posicao: 2, nome: 'Dois', cor: 'Amarelo'&#125;,</span>
-  <br>
-  <span>&#123;posicao: 3, nome: 'Três', cor: 'Azul'&#125;,</span>
-  <br>
-  <span>&#123;posicao: 4, nome: 'Quatro', cor: 'Verde'&#125;,</span>
-  <br>
-  <span>&#123;posicao: 5, nome: 'Cinco', cor: 'Roxo'&#125;,</span>
-  <br>
-  <span>&#123;posicao: 6, nome: 'Seis', cor: 'Laranja'&#125;,</span>
-  <br>
-  <span>];</span>
-  <br>
-  <span>&#64;Component&#40;&#123;</span>
-  <br>
-  <span>selector: 'app-table',</span>
-  <br>
-  <span>styleUrl: 'table.component.css',</span>
-  <br>
-  <span>templateUrl: 'table.component.html',</span>
-  <br>
-  <span>standalone: true,</span>
-  <br>
-  <span>imports: [CdkTableModule],</span>
-  <br>
-  <span>&#125;&#41;</span>
-  <br>
-  <span>expor class TableComponent &#123;</span>
-  <br>
-  <span>displayedColumns: string[] = ['posicao', 'nome', 'cor'];</span>
-  <br>
-  <span>dataSource = new ExampleDataSource();</span>
-  <br>
-  <span>&#125;</span>
-  <br>
-  <br>
-  <span>export class ExampleDataSource extends DataSource&lt;ColorNumbers&gt; &#123;</span>
-  <br>
-  <br>
-  <span>data = new BehaviorSubject&lt;ColorNumbers[]&gt;(COLOR_DATA);</span>
-  <br>
-  <br>
-  <span>connect(): Observable&lt;ColorNumbers[]&gt; &#123;</span>
-  <br>
-  <span> return this.data;</span>
-  <br>
-  <span>&#125;</span>
-  <br>
-  <br>
-  <span>disconnect() &#123;&#125;</span>
-  <br>
-  <span>&#125;</span>
-  
+  </div> <br>
+  <span class="container" style="background-color: #282b2e;">
+      <pre class="pre">
+          <code class="code"
+                [highlight]="TS"
+                language="TS"
+                lineNumbers></code>
+        </pre>
   </span>
-  </span>
-  
   <br>
   <!--Codigo EXPLICATIVO CSS-->
-  <span class="container">
-    <div class="title-codigo">CSS</div>
-    <span class="css-codigo">
-        <code>
-          .table-example&#123;
-          <br>
-            padding-left: 4rem;
-            <br>
-            &#125;
-            <br>
-            table &#123;
-            <br>
-                width: 100%;
-                <br>
-              &#125;
-        </code>
-    </span>
+  <div class="title-codigo">CSS:</div> <br>
+  <span class="container" style="background-color: #282b2e;">
+      <pre class="pre">
+          <code class="code"
+                [highlight]="CSS"
+                language="CSS"
+                lineNumbers></code>
+        </pre>
   </span>
+ 
+  
   
   <!--Explicações de outras feats-->
   
@@ -148,14 +86,26 @@
     <app-table type="estrutural"></app-table>
   </span>
   
-  <!--<span class="container">
-    <div class="title-codigo">HTML da tabela</div>
-    <code class="language-html">
-        <span class="html-codigo">!
+  <div class="html-code">
+    <h2>HTML:</h2>
+    <pre class="pre">
+        <code class="code"
+              [highlight]="CodeForHTML2"
+              language="ts"
+              lineNumbers></code>
+      </pre>
+</div>
+  <br>
   
+  <div class="title-codigo">HTML CODE:</div> <br>
+  <span class="container" style="background-color: #282b2e;">
+      <pre class="pre">
+          <code class="code"
+                [highlight]="HTML2"
+                language="html"
+                lineNumbers></code>
+        </pre>
+  </span>
   
-    </span>
-    </code>
-    </span>-->
   
   </div>
