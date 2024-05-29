@@ -23,7 +23,7 @@ export const routes: Routes = [
     { path: 'card', component: CardPageComponent},
     { path: 'chip', component: ChipsComponent},
     { path: 'text-input', component: InputPageComponent},
-    { path: 'button-input', component: InputbuttonComponent},
+    { path: 'button-input', component: InputButtonPageComponent},
     { path: 'list', component: ListPageComponent},
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
