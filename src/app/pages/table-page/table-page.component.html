@@ -10,11 +10,22 @@
   <span class="container" >
     <app-table type="simple"></app-table>
   </span>
-  <!--Fim da Tabela-->
-  
+ 
   <br>
-  <!--Codigo EXPLICATIVO HTML-->
-  <div class="title-codigo">HTML:</div> <br>
+  <div class="html-code">
+    <h2>HTML:</h2>
+    <pre class="pre">
+        <code class="code"
+              [highlight]="CodeForHTML"
+              language="ts"
+              lineNumbers></code>
+      </pre>
+</div>
+
+  <div class="content">
+    <div class="title"> Code: </div>
+    </div>
+     <div class="title-codigo">HTML:</div> <br>
   <span class="container" style="background-color: #282b2e;">
       <pre class="pre">
           <code class="code"
@@ -23,19 +34,14 @@
                 lineNumbers></code>
         </pre>
   </span>
-
-  <br>
-
-  <div class="content">
-    <div class="title"> Code: </div>
-    </div>
+  
+  <!--Codigo EXPLICATIVO TS-->
+  <div class="title-codigo">TS:</div>
   <div class="content">
     <p>
       O TypeScript aprimora a funcionalidade das tabelas HTML possibilitando a manipulação e interação dinâmica de dados. Você pode vincular dados de arrays ou objetos JavaScript às células da tabela, permitindo atualizações em tempo real e interações do usuário.
     </p>
-  </div>
-  <!--Codigo EXPLICATIVO TS-->
-  <div class="title-codigo">TS:</div> <br>
+  </div> <br>
   <span class="container" style="background-color: #282b2e;">
       <pre class="pre">
           <code class="code"
@@ -79,6 +85,8 @@
   <span  >
     <app-table type="estrutural"></app-table>
   </span>
+
+  <br>
   
   <div class="title-codigo">HTML:</div> <br>
   <span class="container" style="background-color: #282b2e;">

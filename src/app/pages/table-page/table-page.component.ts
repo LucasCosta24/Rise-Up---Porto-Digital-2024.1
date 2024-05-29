@@ -115,4 +115,5 @@ CSS: string = `.table-example{
     </tfoot>
   </table>
   `
+  CodeForHTML: string = ` <app-table type="simple"></app-table>`;
 }
