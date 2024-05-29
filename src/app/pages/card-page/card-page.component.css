@@ -3,147 +3,35 @@
     width: calc(100% - 341px);
     padding: 20px 50px;
 }
-
-.list {
-    font-size: large;
-    padding: 15px;
+.container {    
+  display: block;
+  border: solid gray 1px; 
+  box-sizing: border-box; 
+  border-radius: 20px;
+  width: 100%;
 }
 
 .app-title {
-    font-size: xx-large;
-}
-
-.title {
-    font-size: x-large;
-    font-weight: bolder;
-}
-
-.content {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.container {    
-    display: block;
-    /* border: solid gray 1px; 
-    box-sizing: border-box;  */
-    border-radius: 20px;
-    width: 130%;
-}
-
-
-.html-codigo {
-    align-items: center;
-    display: block;
-    padding: 15px;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.css-codigo {
-    align-items: center;
-    display: block;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
+  font-size: xx-large;
 }
 
 .title-codigo {
-    font-size: large;
-    font-weight: bolder;
-    padding-left: 35px;
-    padding-top: 15px;
-}
-
-code {
-    font-size: large;
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 35px;
+  padding-top: 15px;
 }
 
 .out-code{
-    background-color: plum;
+  background-color: plum;
 }
 
-.li-button-example {
-    padding: 10px;
-    border: 1px solid black;
-    font-size: large;
-    background-color: white;
-    border-radius: 20px;
+code{
+  font-size: large;
 }
 
-.li-button-example:hover {
-    cursor: pointer;
-    color: white;
-    background-color: rgb(0, 123, 255);
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-/* Add application styles & imports to this file! */
 
-pre {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    word-wrap: break-word;
-  }
-  
-  code {
-    flex: 1;
-    line-height: 1.8em;
-    font-size: 14px;
-    min-height: 100%;
-    padding: 1em 1.2em;
-    overflow-x: unset;
-    overflow-y: unset;
-  }
-  
-  .hljs.hljs-line-numbers {
-    padding: 0 !important;
-  }
-  
-  pre .hljs {
-    border: none;
-    transition: border ease 1s;
-  }
-  
-  .hljs-ln {
-    tr {
-      &:first-child td {
-        padding-top: 10px !important;
-      }
-  
-      &:last-child td {
-        padding-bottom: 10px !important;
-      }
-    }
-  }
-  
-  table,
-  tbody,
-  tr,
-  td {
-    background: inherit;
-  }
-  
-  table {
-    border-collapse: separate;
-    border-spacing: 0;
-    background: inherit;
-  }
-  
-  /* for block of numbers */
-  td.hljs-ln-numbers {
-    position: sticky;
-    left: 0;
-    user-select: none;
-    text-align: center;
-    color: #cccccc6b;
-    border-right: 1px solid #cccccc1c;
-    vertical-align: top;
-    padding-right: 10px !important;
-    padding-left: 10px !important;
-  }
-  
-  /* for block of code */
-  td.hljs-ln-code {
-    padding-left: 10px !important;
-  }
-  
