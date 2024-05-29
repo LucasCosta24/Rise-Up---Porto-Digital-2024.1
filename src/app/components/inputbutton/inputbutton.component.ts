@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './inputbutton.component.css'
 })
 export class InputbuttonComponent {
-  @Input() radio: string = "button";
-  @Input() switch: string = "button";
+  @Input() type: string = "radio";
+  @Input() switch: string = "switch";
 
 }
