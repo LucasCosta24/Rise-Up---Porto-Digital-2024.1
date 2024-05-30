@@ -1,51 +1,13 @@
-<!-- <title>Button</title>
-    <div class="app-component-viewer">
-        <div class="content">
-            <h1 class="app-title">Button:</h1>
-            <div>
-                Em HTML, o Button pode ser definido pela tag de abertura <code class="out-code">&lt;button&gt;</code> e a tag de fechamento <code class="out-code">&lt;/button&gt;</code> . Dentro de um elemento <code class="out-code">&lt;button&gt;</code>, você pode colocar conteúdo, como texto ou imagens. Essa é a principal diferença entre esse elemento e os botões criados com o elemento <code class="out-code">&lt;input&gt;</code>.
-            </div>
-        </div>
+<div class="example-button-row" *ngIf="type == 'simples'">
+    <button class="basic">Simples</button>
+</div>
 
-        <section class="container">
-            <div class="example-label">Botão Simples</div>
-            <div class="example-button-row">
-                <button class="basic">Simples</button>
-            </div>
-            <div class="button-container">
-                <div class="title-codigo">HTML</div>
-                <div class="code-container">
-                    <code>&lt;button class="basic"&gt;Simples&lt;/button&gt;</code>
-                </div>
-                <div class="title-codigo">CSS</div>
-                <div class="code-container">
-                    <code>.basic &#123; background-color: #e0e0e0; &#125;</code>
-                </div>
-            </div>
-        </section>
-
-        <section class="container">
-            <div class="example-label">Botão Fino</div>
-            <div class="example-button-row">
-                <button class="thin">Fino</button>
-                <button class="thin basic disabled" disabled>Disabled</button>
-                <a class="thin basic" href="https://www.example.com/" target="_blank">Link</a>
-            </div>
-            <div class="button-container">
-                <div class="title-codigo">HTML</div>
-                <div class="code-container">
-                    <code>&lt;button class="thin"&gt;Fino&lt;/button&gt;</code><br>
-                    <code>&lt;button class="thin basic disabled" disabled&gt;Disabled&lt;/button&gt;</code><br>
-                    <code>&lt;a class="thin basic" href="https://www.example.com/" target="_blank"&gt;Link&lt;/a&gt;</code>
-                </div>
-                <div class="title-codigo">CSS</div>
-                <div class="code-container">
-                    <code>.thin &#123; padding: 5px 10px; border: 1px solid transparent; border-radius: 2px; font-size: 14px; line-height: 1.5; &#125;</code><br>
-                   
-                    <code>.thin.warn &#123; background-color: #f44336; color: white; &#125;</code><br>
-                    <code>.thin.disabled &#123; cursor: not-allowed; opacity: 0.5; &#125;</code>
-                </div>
-            </div>
-        </section>
-    </div>
-</html> -->
+<div class="example-button-row" *ngIf="type == 'fino'">
+    <button class="thin">Fino</button>
+</div> 
+<div >
+    <button class="thin basic disabled" disabled *ngIf="type == 'disabled'">Disabled</button>
+</div>    
+<div> 
+    <a class="thin basic" href="#" target="_blank" *ngIf="type == 'link'">Link</a>
+</div>

@@ -16,6 +16,7 @@ import { ModaisComponent } from './components/modais/modais.component';
 import { InputPageComponent } from './pages/input-page/input-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { ExpandinggridComponent } from './components/expandinggrid/expandinggrid.component';
+import { ExpandinggridPageComponent } from './pages/expandinggrid-page/expandinggrid-page.component';
 // src/app/app.module.ts
 
 @Component({
@@ -37,7 +38,8 @@ import { ExpandinggridComponent } from './components/expandinggrid/expandinggrid
             ModaisComponent,
             InputPageComponent,
             ListPageComponent,
-            ExpandinggridComponent],
+            ExpandinggridComponent,
+            ExpandinggridPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

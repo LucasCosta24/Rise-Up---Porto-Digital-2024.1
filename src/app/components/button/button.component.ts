@@ -11,7 +11,7 @@ import { EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CommonModule],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css'
 })

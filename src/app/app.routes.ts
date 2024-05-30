@@ -7,7 +7,7 @@ import { TableComponent } from './components/table/table.component';
 import { ChipsComponent } from './components/chips/chips.component';
 import { InputTextComponent } from './components/inputtext/inputtext.component';
 import { InputbuttonComponent } from './components/inputbutton/inputbutton.component';
-import { ButtonComponent } from './pages/button-page/button-page.component';
+import { ButtonComponentPage } from './pages/button-page/button-page.component';
 import { SelectComponent } from './components/select/select.component';
 import { CardPageComponent } from './pages/card-page/card-page.component';
 import { ModaisComponent } from './components/modais/modais.component';
@@ -17,12 +17,13 @@ import { DefaultPageComponent } from './pages/default-page/default-page.componen
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { TablePageComponent } from './pages/table-page/table-page.component';
 import { ExpandinggridComponent } from './components/expandinggrid/expandinggrid.component';
+import { ExpandinggridPageComponent } from './pages/expandinggrid-page/expandinggrid-page.component';
 
 
 
 
 export const routes: Routes = [
-    { path: 'button', component: ButtonComponent},
+    { path: 'button', component: ButtonComponentPage},
     { path: 'card', component: CardPageComponent},
     { path: 'chip', component: ChipsComponent},
     { path: 'text-input', component: InputPageComponent},
@@ -31,7 +32,7 @@ export const routes: Routes = [
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
     { path: 'table', component: TablePageComponent},
-    { path: 'expandinggrid', component: ExpandinggridComponent},
+    { path: 'expandinggrid', component: ExpandinggridPageComponent},
     { path: '', component: DefaultPageComponent}
 ];
 

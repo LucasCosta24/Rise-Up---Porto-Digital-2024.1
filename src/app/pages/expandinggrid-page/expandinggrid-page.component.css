@@ -1,0 +1,107 @@
+.app-component-viewer {
+    font-weight: 400;
+    width: calc(100% - 341px);
+    padding: 20px 50px;
+}
+
+.list {
+    font-size: large;
+    padding: 15px;
+}
+
+.app-title {
+    font-size: xx-large;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.container {    
+    display: block;
+    border: solid gray 1px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.list {
+    padding: auto;
+    background-color: white;
+    font-style: none;
+    list-style: none;
+}
+.ordenada-list{
+    padding: auto;
+    background-color: white;
+    font-style: none;
+    list-style: decimal;
+}
+
+
+.ul_title {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.li {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.html-codigo {
+    align-items: center;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.css-codigo {
+    align-items: center;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.title-codigo {
+    font-size: larger;
+    font-weight: bolder;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+
+code {
+    font-size: large;
+}
+
+.out-code{
+    background-color: plum;
+}
+
+.exgrid {
+    padding-top: 20px;
+}
+
+.li-button-example {
+    padding: 10px;
+    border: 1px solid black;
+    font-size: large;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.li-button-example:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 123, 255);
+}

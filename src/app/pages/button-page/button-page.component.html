@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="button-page.component.css">
-    <title>Button</title>
-</head>
-<body>
     <div class="app-component-viewer">
         <div class="content">
             <h1 class="app-title">Button:</h1>
@@ -17,20 +7,33 @@
         </div>
         <div class="title">Botão Simples</div>
 
-        <button 
-            class="button default" 
-            onclick="handleClick()">
-            Botão Simples
-        </button> 
-        <br><br>
-                <div class="title-codigo">Códigos:</div>
+        <span class="container">
+            <div class="contenti">
+            <app-button type = "simples"></app-button>
+            </div>
+        </span>
+        <br>
+        <div class="title-codigo" >HTML:</div><br>
+                    <span class="container" style="background-color: #282b2e;">
+                    <pre class="pre">
+                        <code class="code"
+                              [highlight]="call1"
+                              language="html"
+                              lineNumbers></code>
+                      </pre>
+                </span>
                 <br>
+
+
+        <br>
+        <div class="title">Códigos:</div>
+               <br>
                 <div class="title-codigo">HTML:</div><br>
                 <span class="container" style="background-color: #282b2e;">
                     <pre class="pre">
                         <code class="code"
                               [highlight]="codeForHTML"
-                              language="ts"
+                              language="html"
                               lineNumbers></code>
                       </pre>
                 </span>
@@ -40,34 +43,60 @@
                 <pre class="pre">
                     <code class="code"
                           [highlight]="codeForCSS"
-                          language="ts"
+                          language="css"
                           lineNumbers></code>
                   </pre>
             </span>
 
 <br>
 
-<div class="label">Botões Variados</div>
+<div class="title">Botões Variados</div>
 <br>
             <div class="example-button-row">
     <br>
 
-           <br> <div class="container-3"> <br>
-                <button class="thin">Fino</button>
-                <br>
-                <br>
-                <button class="thin basic disabled" disabled>Desativado</button>
-                <br>
-                <br>    
-            <a class="thin basic" href="https://www.example.com/" target="_blank">Link</a>
-            <br>
-            <br>
+        <br>
+
+        <span class="container">
+            <div class="contenti">
+                <app-button type = "fino"></app-button>
+                <app-button type = "disabled"></app-button>
+                <app-button type = "link"></app-button>
             </div>
+        </span>
             <br>
         </div>
-       
         <br>
-<div class="title-codigo2">Códigos:</div>
+        <div class="title-codigo" >HTML:</div><br>
+                    <span class="container" style="background-color: #282b2e;">
+                    <pre class="pre">
+                        <code class="code"
+                              [highlight]="call2"
+                              language="html"
+                              lineNumbers></code>
+                      </pre>
+                </span>
+                <br>
+                <span class="container" style="background-color: #282b2e;">
+                    <pre class="pre">
+                        <code class="code"
+                              [highlight]="call3"
+                              language="html"
+                              lineNumbers></code>
+                      </pre>
+                </span>
+                <br>
+                <span class="container" style="background-color: #282b2e;">
+                    <pre class="pre">
+                        <code class="code"
+                              [highlight]="call4"
+                              language="html"
+                              lineNumbers></code>
+                      </pre>
+                </span>
+                <br>
+        <br>
+<div class="title">Códigos:</div>
         <br>
             <div class="button-container"> 
                     <div class="title-codigo" >HTML:</div><br>
@@ -92,5 +121,3 @@
                 </span>
             </div>
     </div>
-</body>
-</html>

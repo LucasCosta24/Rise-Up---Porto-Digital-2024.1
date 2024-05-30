@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {EventEmitter, Input, Output } from '@angular/core';
 import { Highlight, HighlightAuto } from 'ngx-highlightjs';
-import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers'
+import { ButtonComponent } from '../../components/button/button.component';
 @Component({
   selector: 'app-button-page',
   standalone: true,
@@ -10,8 +11,18 @@ import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
   templateUrl: './button-page.component.html',
   styleUrl: './button-page.component.css'
 })
-export class ButtonComponent {
+export class ButtonComponentPage {
   @Input() longText: string = "Conteúdo do button";
+  call1: string = `<app-button type = "simples"></app-button>`
+
+  call2: string = `<app-button type = "fino"></app-button>`
+
+  call3: string = `<app-button type = "disabled"></app-button>`
+
+  call4: string = `<app-button type = "link"></app-button>`
+
+
+
   codeForHTML = `<button 
   class="button default" 
   onclick="handleClick()">
@@ -41,10 +52,8 @@ export class ButtonComponent {
    &lt;/style&gt;</code></pre>`;
    codeForHTML1 = 
 `<button class="thin">Fino</button>
-<button class="thin basic disabled"
-disabled>Desativado</button>
-<a class="thin basic" href="https://www.example.com/" 
-target="_blank">Link</a>`;
+<button class="thin basic disabled"disabled>Desativado</button>
+<a class="thin basic" href="#" target="_blank">Link</a>`;
    codeForCSS1 = 
 `button.thin {
   padding: 8px 12px;
