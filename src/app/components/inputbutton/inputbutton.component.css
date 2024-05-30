@@ -25,9 +25,9 @@
   background-color: #000000;
   border-radius: 50%;
   top: -55px;
-  left: 93px;
+  left: 115px;
   transition: 0.3s;
-  border: 5px solid #fffafa;
+  border: 5px solid #a2a2a2;
 }
 
 input[type="checkbox"]:checked + .toggle-label::after {
@@ -40,9 +40,9 @@ input[type="checkbox"] {
 
 .toggle-container label {
   font-family: Arial, sans-serif;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 input[type="radio"]:checked + .radio-option::before {

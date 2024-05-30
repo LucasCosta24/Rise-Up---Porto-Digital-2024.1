@@ -24,4 +24,21 @@ export class InputPageComponent {
   <label for="birthdate">{{text}}</label>
   <input type="date" id="birthdate" name="birthdate" required>
 />`
+
+codeforHTMLinputtextpull =`<app-inputText type = 'text' />`
+codeforHTMLinputpasswordpull =`<app-inputText type = 'password' />`
+codeforHTMLinputdatepull =`<app-inputText type = 'date' />`
+codeforHTMLinputts=`import { Component } from '@angular/core';
+import { InputTextComponent } from '../../components/inputtext/inputtext.component';
+import { Highlight, HighlightAuto } from 'ngx-highlightjs';
+import { HighlightLineNumbers } from 'ngx-highlightjs/line-numbers';
+
+@Component({
+  selector: 'app-input-page',
+  standalone: true,
+  imports: [ InputTextComponent, Highlight, HighlightAuto, HighlightLineNumbers],
+  templateUrl: './input-page.component.html',
+  styleUrl: './input-page.component.css'
+})
+export class InputPageComponent {/>`
 }
