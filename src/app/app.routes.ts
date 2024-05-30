@@ -16,6 +16,9 @@ import { InputButtonPageComponent } from './pages/inputbutton-page/inputbutton-p
 import { DefaultPageComponent } from './pages/default-page/default-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { TablePageComponent } from './pages/table-page/table-page.component';
+import { ExpandinggridComponent } from './components/expandinggrid/expandinggrid.component';
+
+
 
 
 export const routes: Routes = [
@@ -28,6 +31,7 @@ export const routes: Routes = [
     { path: 'modal', component: ModaisComponent},
     { path: 'select', component: SelectComponent},
     { path: 'table', component: TablePageComponent},
+    { path: 'expandinggrid', component: ExpandinggridComponent},
     { path: '', component: DefaultPageComponent}
 ];
 

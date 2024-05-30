@@ -1,26 +1,37 @@
-<!-- The grid: three columns -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chip Component</title>
+  <link rel="stylesheet" href="expandinggrid.component.css">
+</head>
+<body>
+  <div class="app-component-viewer">
+      <div class="content">
+          <h1 class="app-title">Expanding Grid:</h1>
+          <p>
+            Um "expanding grid" (ou grade expansível) em HTML é uma interface de usuário onde você 
+            tem uma grade de itens e cada item pode ser expandido para mostrar mais detalhes ou 
+            conteúdo. Isso é frequentemente usado em aplicações da web para organizar e exibir 
+            informações de maneira mais compacta e interativa.
+          </p>
+      </div> 
+      <br>
+      
 <div class="row">
-    <div class="column" onclick="openTab('b1');" style="background:green;">Box 1</div>
-    <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
-    <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
-  </div>
-  
-  <!-- The expanding grid (hidden by default) -->
-  <div id="b1" class="containerTab" style="display:none;background:green">
-    <!-- If you want the ability to close the container, add a close button -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-    <h2>Box 1</h2>
-    <p>Lorem ipsum..</p>
-  </div>
-  
-  <div id="b2" class="containerTab" style="display:none;background:blue">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-    <h2>Box 2</h2>
-    <p>Lorem ipsum..</p>
-  </div>
-  
-  <div id="b3" class="containerTab" style="display:none;background:red">
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-    <h2>Box 3</h2>
-    <p>Lorem ipsum..</p>
-  </div>
+  <div class="column" (click)="openTab('b1')">Bloco 1</div>
+  <div class="column1" (click)="openTab('b2')">Bloco 2</div>
+</div>
+
+<br>
+<div id="b1" class="containerTab" style="display:none;background:darkorange">
+ 
+  <span (click)="closeTab('b1')" class="closebtn">x</span>
+  <h2>Bloco 1</h2>
+  <p>Matheus gay safado</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:dodgerblue">
+  <span (click)="closeTab('b2')" class="closebtn">x</span>
+  <h2>Bloco 2</h2>
+  <p>Lorem ipsum..</p>
+</div>

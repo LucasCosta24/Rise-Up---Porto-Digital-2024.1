@@ -1,30 +1,51 @@
-/* The grid: Three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .containerTab {
-    padding: 20px;
-    color: white;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Closable button inside the image */
-  .closebtn {
-    float: right;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
+.column{
+  float: left;
+  width: 20%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color:darkorange;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-right: 5%;
+}
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  background-color:dodgerblue;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-left: 5%;
+}
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+  border-radius: 10px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 10px;
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
