@@ -18,20 +18,79 @@
       <br>
       
 <div class="row">
-  <div class="column" (click)="openTab('b1')">Bloco 1</div>
-  <div class="column1" (click)="openTab('b2')">Bloco 2</div>
+  <div class="column" (click)="openTab('b1')">Expanding Grid</div>
+  <div class="column1" (click)="openTab('b2')">Expanding Grid</div>
 </div>
 
 <br>
-<div id="b1" class="containerTab" style="display:none;background:darkorange">
+<div id="b1" class="containerTab" style="display:none;background:#ff8c00">
  
   <span (click)="closeTab('b1')" class="closebtn">x</span>
-  <h2>Bloco 1</h2>
-  <p>Matheus gay safado</p>
+  <h2>Estrutura Básica</h2>
+  <p>A estrutura básica de um expanding grid em HTML geralmente envolve uma grade de itens 
+    (geralmente representados por divs ou lis) e áreas de detalhes ocultas associadas a 
+      cada item. Quando um item é clicado, a área de detalhes correspondente é exibida ou ocultada, 
+      dependendo do seu estado atual.
+  </p>
 </div>
 
 <div id="b2" class="containerTab" style="display:none;background:dodgerblue">
   <span (click)="closeTab('b2')" class="closebtn">x</span>
-  <h2>Bloco 2</h2>
-  <p>Lorem ipsum..</p>
+  <h2>Benefícios do Expanding Grid</h2>
+  <p>1 - Organização de Informações: Um expanding grid permite organizar informações de forma hierárquica. 
+    Os itens principais podem representar categorias ou resumos, enquanto os detalhes expandidos 
+    fornecem informações mais específicas.<br>
+    2 - Conservação de Espaço: Em interfaces de usuário onde o espaço é limitado, como em dispositivos 
+    móveis ou layouts responsivos, um expanding grid permite apresentar uma quantidade significativa 
+    de informações de forma compacta, economizando espaço na tela.<br>
+    3 - Interatividade: Os usuários podem interagir com o grid clicando nos itens para expandir ou recolher 
+    os detalhes. Isso proporciona uma experiência de usuário mais envolvente e interativa.
+  
+    Exemplos de Uso:
+Catálogo de produtos: Um expanding grid pode ser usado para exibir uma lista de produtos com informações 
+resumidas, como nome e preço, e permitir que os usuários expandam os detalhes de cada produto para ver 
+descrições completas e imagens adicionais.
+Perguntas frequentes (FAQ): Um expanding grid pode ser usado para organizar perguntas frequentes, 
+exibindo as perguntas como itens principais e os detalhes expandidos contendo as respostas correspondentes.
+Painel de controle: Um expanding grid pode ser usado em um painel de controle de aplicativo para exibir 
+resumos de métricas ou atividades recentes, com detalhes expandidos disponíveis para uma análise mais aprofundada.
+  </p>
 </div>
+<h2>Exemplos de Uso</h2>
+<p>1 - Catálogo de produtos: Um expanding grid pode ser usado para exibir uma lista de produtos com informações 
+resumidas, como nome e preço, e permitir que os usuários expandam os detalhes de cada produto para ver 
+descrições completas e imagens adicionais. <br>
+2 - Perguntas frequentes (FAQ): Um expanding grid pode ser usado para organizar perguntas frequentes, 
+exibindo as perguntas como itens principais e os detalhes expandidos contendo as respostas correspondentes. <br>
+3 - Painel de controle: Um expanding grid pode ser usado em um painel de controle de aplicativo para exibir 
+resumos de métricas ou atividades recentes, com detalhes expandidos disponíveis para uma análise mais aprofundada.</p>
+
+<div class="title-codigo">HTML:</div><br>
+<span class="container" style="background-color: #282b2e;">
+<pre class="pre">
+    <code class="code"
+          [highlight]="codeForHTML"
+          language="ts"
+          lineNumbers></code>
+  </pre>
+</span>
+
+<div class="title-codigo">CSS:</div><br>
+<span class="container" style="background-color: #282b2e;">
+<pre class="pre">
+    <code class="code"
+          [highlight]="codeForCSS"
+          language="ts"
+          lineNumbers></code>
+  </pre>
+</span>
+
+<div class="title-codigo">TS:</div><br>
+<span class="container" style="background-color: #282b2e;">
+<pre class="pre">
+    <code class="code"
+          [highlight]="codeForTS"
+          language="ts"
+          lineNumbers></code>
+  </pre>
+</span>

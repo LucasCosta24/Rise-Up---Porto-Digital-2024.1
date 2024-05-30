@@ -10,7 +10,12 @@
   border-radius: 20px;
   border: 2px solid black;
   margin-right: 5%;
+  transition: background-color 0.8s ease;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
 }
+
+
 .column1 {
   float: left;
   width: 20%;
@@ -23,6 +28,8 @@
   border-radius: 20px;
   border: 2px solid black;
   margin-left: 5%;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
 }
 .row{
   display: flex;
@@ -48,4 +55,13 @@
   font-size: 35px;
   cursor: pointer;
 }
+.column:hover {
+  background-color: rgb(189, 105, 56); /* Cor mais clara ao passar o mouse */
+}
+.column1:hover {
+  background-color:rgb(93, 114, 206); /* Cor mais clara ao passar o mouse */
+}
 
+.containerTab:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Cor mais escura ao passar o mouse */
+}
