@@ -19,6 +19,7 @@ import { TablePageComponent } from './pages/table-page/table-page.component';
 import { ExpandinggridComponent } from './components/expandinggrid/expandinggrid.component';
 import { ExpandinggridPageComponent } from './pages/expandinggrid-page/expandinggrid-page.component';
 import { SelectPageComponent } from './pages/select-page/select-page.component';
+import { ChipsPageComponent } from './pages/chips-page/chips-page.component';
 
 
 
@@ -26,7 +27,7 @@ import { SelectPageComponent } from './pages/select-page/select-page.component';
 export const routes: Routes = [
     { path: 'button', component: ButtonComponentPage},
     { path: 'card', component: CardPageComponent},
-    { path: 'chip', component: ChipsComponent},
+    { path: 'chip', component: ChipsPageComponent},
     { path: 'text-input', component: InputPageComponent},
     { path: 'button-input', component: InputButtonPageComponent},
     { path: 'list', component: ListPageComponent},

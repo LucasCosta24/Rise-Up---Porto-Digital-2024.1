@@ -1,135 +1,15 @@
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chip Component</title>
-    <link rel="stylesheet" href="chips.component.css">
-</head>
-<body>
-    <div class="app-component-viewer">
-        <div class="content">
-            <h1 class="app-title">Chip:</h1>
-            <p>
-                Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação. 
-                Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar 
-                entradas de usuário, tais como seleções, contatos, ou filtros.
-            </p>
-        </div>
-        
-        <div class="content">
-            <div class="title">Chip Estático</div>
-        </div>
-      
-        <div class="container">
-            <div class="contenti">
-                <div class="chip" [ngStyle]="{'background-color': bgColor}">
-                    <div>{{text1}}</div>
-                </div>
-                <div class="chip1" [ngStyle]="{'background-color': bgColor1}">
-                    <div>{{text2}}</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content">
-            <p>
-                Se refere a um tipo de chip que exibe informações estáticas e não interativas. 
-                Esses chips podem ser úteis para mostrar informações que não precisam de 
-                interação do usuário, como tags ou rótulos.
-            </p>
-        </div>
-      
-        <div class="title-codigo">HTML:</div><br>
-<span class="container96" style="background-color: #282b2e;">
-<pre class="pre">
-    <code class="code"
-          [highlight]="codeForHTML"
-          language="ts"
-          lineNumbers></code>
-  </pre>
-</span>
-      
-        <br><br>     
-      
-        <div class="title-codigo">CSS:</div><br>
-        <span class="container96" style="background-color: #282b2e;">
-        <pre class="pre">
-            <code class="code"
-                  [highlight]="codeForCSS"
-                  language="ts"
-                  lineNumbers></code>
-          </pre>
-        </span>
-          
-        <br><br>  
-      
-        <div class="title-codigo">TS:</div><br>
-        <span class="container96" style="background-color: #282b2e;">
-        <pre class="pre">
-            <code class="code"
-                  [highlight]="codeForTSS"
-                  language="ts"
-                  lineNumbers></code>
-          </pre>
-        </span>
-      
-        <br><br>
-
-        <div class="title">Chip Modificável</div>
-
-        <br>
-
-        <span class="container-chip3">
-          <div class="contenti">
-            <!-- codigo que ficara nesse html -->
-              <div class="chip" (click)="handleClick()">
-                  <div class="chip12" #chip>Digite</div>
-              </div>
-              <!-- final do codigo que ficara nesse html -->
-          </div>
-      </span>
-      
-
-            <p>
-                Se refere a um tipo de chip que exibe informações Modificáveis.<br>
-                Diferente do anterior, esse chip pode ser alterado pelo usuário<br>
-                de forma dinâmica.
-            </p>
-        
-
-       
-            <div class="title-codigo">HTML:</div><br>
-            <span class="container96" style="background-color: #282b2e;">
-            <pre class="pre">
-                <code class="code"
-                      [highlight]="codeForHTML1"
-                      language="ts"
-                      lineNumbers></code>
-              </pre>
-            </span>
-          
-<br><br>
-            <div class="title-codigo">CSS:</div><br>
-            <span class="container96" style="background-color: #282b2e;">
-            <pre class="pre">
-                <code class="code"
-                    [highlight]="codeForCSS1"
-                    language="ts"
-                    lineNumbers></code>
-            </pre>
-            </span>
-<br>
-            <div class="title-codigo">TS:</div><br>
-            <span class="container96" style="background-color: #282b2e;">
-            <pre class="pre">
-                <code class="code"
-                    [highlight]="codeForTS1"
-                    language="ts"
-                    lineNumbers></code>
-            </pre>
-            </span>
-
-<br><br>
+<div *ngIf="type =='chipU'" class="chip" [ngStyle]="{'background-color': bgColor}">
+     <div >{{text1}}</div>
+</div>
+ <div *ngIf="type =='chipD'" class="chip1" [ngStyle]="{'background-color': bgColor1}">
+     <div>{{text2}}</div>
+                
+<!-- codigo que ficara nesse html -->
+<div  *ngIf="type =='chipT'" class="chip3" (click)="handleClick()">
+   <div class="chip12" #chip>Digite</div>
+</div>
+<!-- final do codigo que ficara nesse html -->
+         
   
 
 
