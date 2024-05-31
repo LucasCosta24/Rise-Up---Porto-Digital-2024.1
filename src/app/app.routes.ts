@@ -18,6 +18,7 @@ import { ListPageComponent } from './pages/list-page/list-page.component';
 import { TablePageComponent } from './pages/table-page/table-page.component';
 import { ExpandinggridComponent } from './components/expandinggrid/expandinggrid.component';
 import { ExpandinggridPageComponent } from './pages/expandinggrid-page/expandinggrid-page.component';
+import { SelectPageComponent } from './pages/select-page/select-page.component';
 
 
 
@@ -29,8 +30,7 @@ export const routes: Routes = [
     { path: 'text-input', component: InputPageComponent},
     { path: 'button-input', component: InputButtonPageComponent},
     { path: 'list', component: ListPageComponent},
-    { path: 'modal', component: ModaisComponent},
-    { path: 'select', component: SelectComponent},
+    { path: 'select', component: SelectPageComponent},
     { path: 'table', component: TablePageComponent},
     { path: 'expandinggrid', component: ExpandinggridPageComponent},
     { path: '', component: DefaultPageComponent}

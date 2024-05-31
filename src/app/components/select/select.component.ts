@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input, input} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -12,7 +12,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   imports: [MatFormFieldModule, MatSelectModule, FormsModule, ReactiveFormsModule],
 })
 export class SelectComponent {
+  @Input() type: string = "text";
+
   Nomes = new FormControl('');
 
-  toppingList: string[] = ['Marllon', 'João', 'Luquinhas', 'Duda', 'José', 'Matheus','Joninhas'];
 }
