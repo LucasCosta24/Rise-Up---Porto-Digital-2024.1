@@ -88,4 +88,7 @@ codeForCSS : string =
       this.chipRef!.nativeElement.innerHTML = newName;
     }
 `
+CodesForHTML1: string = `<app-chips type="chipstatic1"></app-chips>`;
+CodesForHTML2: string = `<app-chips type="chipstatic2"></app-chips>`;
+CodesForHTML3: string = `<app-chips type = "chip3"></app-chips>`;
 }

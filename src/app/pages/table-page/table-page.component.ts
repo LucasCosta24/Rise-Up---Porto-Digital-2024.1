@@ -116,5 +116,5 @@ CSS: string = `.table-example{
   </table>
   `
   CodeForHTML: string = ` <app-table type="simple"></app-table>`;
-  CodeForHTML2: string = `<app-table type="estrutural"></app-table>`
+  CodeForHTML2: string = `<app-table type="estrutural"></app-table>`;
 }
