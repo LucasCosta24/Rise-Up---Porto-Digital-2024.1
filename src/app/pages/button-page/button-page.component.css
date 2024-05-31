@@ -73,6 +73,10 @@
     width: 100%;
 }
 
+.btn {
+    padding: auto;
+}
+
 .title-codigo {
     font-size: large;
     font-weight: bolder;
