@@ -33,6 +33,5 @@ HTML2: string = `<select class="select" ngIf*="type == 'simple'">
   <option value="Opção 6">Opção 6</option>
   <option value="Opção 7">Opção 7</option>
 </select>`
-
 }
 

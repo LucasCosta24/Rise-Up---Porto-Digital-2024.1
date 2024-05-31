@@ -1,5 +1,5 @@
 
-  <select class="select" ngIf*="type == 'simple'">
+  <select class="select" *ngIf="type == 'simple'">
     <option value="">Selecione uma Opção</option>
     <option value="Opção 1">Opção 1</option>
     <option value="Opção 2">Opção 2</option>
@@ -10,7 +10,7 @@
     <option value="Opção 7">Opção 7</option>
   </select>
 
-<select class="select" name="opcoes" id="opcoes" ngIf*="type == 'tabela2'">
+<select class="select" name="opcoes" id="opcoes" *ngIf="type == 'tabela2'">
     <option value="">Selecione uma Opção</option>
   <optgroup label="Grupo 1">
     <option value="Opção 1">Opção 1</option>
