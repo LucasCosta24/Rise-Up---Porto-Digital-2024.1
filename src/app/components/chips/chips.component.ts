@@ -23,17 +23,6 @@ export class ChipsComponent {
   @Input() text2: string = "Chip dois";
   @Input('bg-color') bgColor1: string = "#839fc7";
 
-
-
-
-
-
-
-
-
-
-
-
   @ViewChild('chip') chipRef: ElementRef|undefined;
 
   handleClick() {
