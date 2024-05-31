@@ -112,4 +112,7 @@ export class ListPageComponent {
     background-color: rgb(0, 123, 255);
     }
   `
+  CodesForHTML: string = `<app-list type = 'simples'></app-list>`
+  CodesForHTML2: string = `<app-list type = 'ordenada'></app-list>`
+  CodesForHTML3: string = `<app-list type="Aninhada"></app-list>`
 }

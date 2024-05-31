@@ -77,4 +77,5 @@ export class CardPageComponent {
     @Input() icon: string = "database";
   }
 ";`;
+
 }
