@@ -25,7 +25,7 @@
 
 .container {    
     display: block;
-    border: solid gray 1px;
+    border: solid rgb(6, 3, 218) 1px;
     box-sizing: border-box;
     border-radius: 20px;
     width: 100%;
@@ -99,5 +99,5 @@ code {
 .li-button-example:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(0, 123, 255);
+    background-color: rgb(33, 149, 243);
 }

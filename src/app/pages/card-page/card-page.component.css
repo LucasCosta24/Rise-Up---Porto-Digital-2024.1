@@ -5,7 +5,7 @@
 }
 .container {    
   display: block;
-  border: solid gray 1px; 
+  border: solid rgb(33, 149, 243) 1px; 
   box-sizing: border-box; 
   border-radius: 20px;
   width: 100%;

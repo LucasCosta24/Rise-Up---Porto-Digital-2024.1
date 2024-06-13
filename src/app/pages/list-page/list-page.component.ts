@@ -109,7 +109,7 @@ export class ListPageComponent {
     .li-button-example:hover {
     cursor: pointer;
     color: white;
-    background-color: rgb(0, 123, 255);
+    background-color: rgb(33, 149, 243);
     }
   `
   CodesForHTML: string = `<app-list type = 'simples'></app-list>`
