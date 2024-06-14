@@ -1,3 +1,14 @@
+.app-component-viewer {
+    font-weight: 400;
+    width: calc(100% - 341px);
+    padding: 20px 50px;
+}
+
+.content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -12,75 +23,25 @@ body {
   border: solid rgb(33, 149, 243) 2px;
   box-sizing: border-box;
   border-radius: 20px;
-  width: 40%;
+  width: 100%;
 }
 
 .login-container {
-    width: 150px;
+    width: 200px;
     margin: 100px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    text-align: center;
-}
+.title {
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(20, 74, 188);
+  }
 
 .input-group {
     margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.button-container {
-    text-align: center;
-}
-
-.button-container button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.button-container button:hover {
-    background-color: #0056b3;
-}
-
-
-
-.html-code h2 {
-    text-align: left;
-    margin-bottom: 15px;
-    color: #007bff
-
-}
-
-.html-code code {
-    align-items: left;
-    display: block;
-    border: solid rgb(33, 149, 243) 2px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    width: 50%;
-    margin-left: 10%;
-    margin-right: auto;
-    padding: 15px;
 }
 
 .app-title {
@@ -89,4 +50,12 @@ h2 {
 
 .title {
     color: rgb(20, 74, 188);
+}
+
+code {
+    font-size: large;
+}
+
+.out-code{
+    background-color: rgb(251, 184, 53);
 }

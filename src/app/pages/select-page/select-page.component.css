@@ -95,17 +95,3 @@ code {
 .out-code{
     background-color: rgb(251, 184, 53);
 }
-
-.li-button-example {
-    padding: 10px;
-    border: 1px solid black;
-    font-size: large;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.li-button-example:hover {
-    cursor: pointer;
-    color: white;
-    background-color: rgb(33, 149, 243);
-}

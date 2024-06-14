@@ -1,3 +1,14 @@
+.app-component-viewer {
+  font-weight: 400;
+  width: calc(100% - 341px);
+  padding: 20px 50px;
+}
+
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -5,29 +16,30 @@ body {
   padding: 0;
 }
 
+.contenti {
+  font-size: large;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-.container {
-  align-items: center;
+.container {    
   display: block;
-  padding: auto;
   border: solid rgb(33, 149, 243) 2px;
   box-sizing: border-box;
   border-radius: 20px;
-  width: 200%;
+  width: 100%;
 }
 
 
 .login-container {
+  display: block;
   width: 110px;
-  margin: 100px auto;
+  margin: 100px;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
 }
 
 .input-group {
@@ -39,12 +51,6 @@ h2 {
   margin-bottom: 5px;
 }
 
-.input-group input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
 
 .button-container {
   text-align: center;
@@ -64,27 +70,6 @@ h2 {
   background-color: #0056b3;
 }
 
-
-
-.html-code h2 {
-  text-align: left;
-  margin-bottom: 10px;
-  color:#007bff;
-  margin-left: 10%;
-}
-
-.html-code code {
-  align-items: left;
-  display: block;
-  border: solid rgb(33, 149, 243) 2px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  width: 50%;
-  margin-left: 10%;
-  margin-right: auto;
-  padding: 15px;
-}
-
 .app-title {
   color: rgb(20, 74, 188);
 }
@@ -93,4 +78,17 @@ h2 {
   color: rgb(20, 74, 188);
 }
 
+code {
+  font-size: large;
+}
+
+.out-code{
+  background-color: rgb(251, 184, 53);
+}
+
+.title {
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(20, 74, 188);
+}
 

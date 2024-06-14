@@ -5,17 +5,20 @@ body {
     padding: 0;
 }
 
+.textbox {
+    
+}
+.labelbox {
+
+}
+
 .login-container {
-    width: 300px;
+    width: 100%;
     margin: 100px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
 }
 
 .input-group {
@@ -34,9 +37,6 @@ h2 {
     border-radius: 3px;
 }
 
-.button-container {
-    text-align: center;
-}
 
 .button-container button {
     width: 100%;
