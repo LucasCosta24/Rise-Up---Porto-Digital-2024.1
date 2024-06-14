@@ -103,7 +103,7 @@
     background-color: plum;
   }
   
-  .container-html, .container-css, .container-TS, .container-chip3{
+  .container-html, .container-css, .container-TS, .container-chip3,.container-chip4{
     display: block;
     border: solid rgb(33, 149, 243) 2px;
     box-sizing: border-box;

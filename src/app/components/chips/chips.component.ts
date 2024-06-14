@@ -24,6 +24,7 @@ export class ChipsComponent {
   @Input('bg-color') bgColor1: string = "#839fc7";
 
   @ViewChild('chip') chipRef: ElementRef|undefined;
+  @ViewChild('chip4') chipRef4: ElementRef | undefined;
 
   handleClick() {
     const newName = prompt('Digite um novo nome para o chip:');
@@ -47,7 +48,39 @@ export class ChipsComponent {
       this.chipRef!.nativeElement.innerHTML = newName;
     }
 
+
+
+    handleClick4() {
+      const newName = prompt('Digite um novo nome para o chip:');
+      if (newName !== null && newName.trim() !== '') {
+        const limiteCaracteres = 12;
+  
+        if (newName.trim().length > limiteCaracteres) {
+          alert(`Por favor, digite no máximo ${limiteCaracteres} caracteres.`);
+          return; // Saia da função sem fazer nada
+        }
+  
+        if (newName.trim() !== '') {
+          console.log(this.chipRef4?.nativeElement);
+          if (this.chipRef4) {
+            this.chipRef4.nativeElement.innerHTML = newName;
+          }
+        }
+      }
+      console.log(this.chipRef4!.nativeElement);
+      this.chipRef4!.nativeElement.innerHTML = newName;
     }
+  
+    handleClose4(event: Event) {
+      event.stopPropagation(); // Impede que o clique no botão feche dispare o handleClick
+      const chipElement = (event.target as HTMLElement).parentElement;
+      if (chipElement) {
+        chipElement.style.display = 'none';
+      }
+    }
+  }
+
+
 
 
     
