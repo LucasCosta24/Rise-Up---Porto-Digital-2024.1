@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<div class="card">
+<div *ngIf="type == 'simples'" class="card">
 
   <div class="card-header">
     <i class="icon" [ngClass]="'fas fa-' + icon"></i>                                
@@ -14,3 +14,20 @@
 </div>
 
 
+<div *ngIf="type == 'comchip'" class="card">
+
+  <div class="card-header">
+    <i class="icon" [ngClass]="'fas fa-' + icon"></i>                                
+    <h2>{{title}}</h2>
+  </div>
+
+  <div class="card-body">
+    <img class="imagem-do-cartao" [src]="imageSrc" alt="Descrição da imagem">
+    <ng-content></ng-content>
+    <div>
+    <app-chips type = 'chipstatic2' text2 = 'Like'></app-chips>
+    <app-chips type = 'chipstatic2' text2 = 'Share'></app-chips>
+  </div>
+  </div>
+
+</div>  

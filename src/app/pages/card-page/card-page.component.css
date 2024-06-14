@@ -35,4 +35,11 @@ code{
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
+.cardsapps{
+  flex-direction: row;
+}
+.textt {
+  margin: 10px;
+  font-size: 12px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+}

@@ -1,4 +1,4 @@
-.card {
+/* .card {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 30px;
@@ -14,6 +14,7 @@
   justify-content: flex-start;
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
+
 }
 
 .icon {
@@ -28,4 +29,47 @@
   font-size: 20px;
   align-items: center;
   justify-content: center;
+} */
+
+.card {
+  border: 1px solid #ccc;
+  border-top: 10px solid orange; 
+  border-radius: 5px;
+  margin: 20px;
+  width: 350px; 
+  height: 410px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.card-header {
+  padding: 13px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header i.icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.card-header h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: calc(100% - 60px); /* Altura do card menos a altura do cabeçalho */
+  flex-direction: column;
+}
+.imagem-do-cartao {
+  max-width: calc(100% - 50px); /* Largura máxima da imagem com margem reduzida */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Margem superior e inferior de 10px e margem automática nas laterais para centralização */
+  object-fit: cover;
+}
+

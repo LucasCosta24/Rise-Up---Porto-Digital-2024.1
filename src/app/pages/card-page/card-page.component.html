@@ -7,15 +7,27 @@
     </div>
 
     <br>
-
-    <app-card>
+    <div class="cardsapps">
+    <app-card type = 'simples'>
         <p class="text-card">{{longText}}</p>
     </app-card>
-    <br>        
-    <div class="content">
-        <p>Seletor: app-card</p>
-        <p>Exportado como: CardComponent</p>
-    </div>
+
+    <app-card type = 'comchip' title= 'Squad_19' icon= 'heart' [imageSrc]="'https://media.discordapp.net/attachments/1219346674376245379/1244014236493938809/Imagem_do_WhatsApp_de_2024-05-24_as_20.56.46_271b2b23.jpg?ex=666c9e8a&is=666b4d0a&hm=e862d5f4a19412a93cfbb50e26fca685c4eb92479c7fea6c04dccc433bf2e115&=&format=webp&width=819&height=614'">
+    <p class="textt">Alunos do Embarque Digital criam solução tecnológica para empresa Ustore.</p>
+    </app-card>
+</div>
+    <br>
+    
+        
+    <div class="title-codigo">Código Seletor para Angular:</div><br>
+    <span class="container" style="background-color: #282b2e;">
+    <pre class="pre">
+        <code class="code"
+              [highlight]="codeForSelect"
+              language="ts"
+              lineNumbers></code>
+      </pre>
+</span>
 
     <br>
     
