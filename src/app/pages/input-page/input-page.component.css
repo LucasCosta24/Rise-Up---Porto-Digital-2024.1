@@ -5,8 +5,18 @@ body {
     padding: 0;
 }
 
+.container {
+  align-items: left;
+  display: block;
+  padding: auto;
+  border: solid rgb(33, 149, 243) 2px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 40%;
+}
+
 .login-container {
-    width: 300px;
+    width: 150px;
     margin: 100px auto;
     background-color: #fff;
     padding: 20px;
@@ -53,33 +63,24 @@ h2 {
 }
 
 
-.html-code {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 20px;
-}
 
 .html-code h2 {
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #007bff
+
 }
 
 .html-code code {
+    align-items: left;
     display: block;
-    padding: 10px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
-.css-container {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 20px;
+    border: solid rgb(33, 149, 243) 2px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: auto;
+    padding: 15px;
 }
 
 .app-title {

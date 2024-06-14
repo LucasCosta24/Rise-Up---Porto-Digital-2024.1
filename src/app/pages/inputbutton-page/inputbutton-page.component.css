@@ -5,6 +5,18 @@ body {
   padding: 0;
 }
 
+
+.container {
+  align-items: center;
+  display: block;
+  padding: auto;
+  border: solid rgb(33, 149, 243) 2px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 200%;
+}
+
+
 .login-container {
   width: 110px;
   margin: 100px auto;
@@ -53,25 +65,24 @@ h2 {
 }
 
 
-.html-code {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
-}
 
 .html-code h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
+  color:#007bff;
+  margin-left: 10%;
 }
 
 .html-code code {
+  align-items: left;
   display: block;
-  padding: 10px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  border: solid rgb(33, 149, 243) 2px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: auto;
+  padding: 15px;
 }
 
 .app-title {
