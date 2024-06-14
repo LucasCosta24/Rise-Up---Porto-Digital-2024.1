@@ -11,11 +11,13 @@
 
 .app-title {
     font-size: xx-large;
+    color: rgb(20, 74, 188);
 }
 
 .title {
     font-size: x-large;
     font-weight: bolder;
+    color: rgb(20, 74, 188);
 }
 
 .content {
@@ -30,7 +32,7 @@
 
 .container {    
     display: block;
-    border: solid rgb(33, 149, 243) 1px;
+    border: solid rgb(33, 149, 243) 2px;
     box-sizing: border-box;
     border-radius: 20px;
     width: 80%;
@@ -83,6 +85,7 @@
     font-weight: bolder;
     padding-left: 35px;
     padding-top: 15px;
+    color: rgb(20, 74, 188);
 }
 
 code {
@@ -90,7 +93,7 @@ code {
 }
 
 .out-code{
-    background-color: plum;
+    background-color: rgb(251, 184, 53);
 }
 
 .li-button-example {

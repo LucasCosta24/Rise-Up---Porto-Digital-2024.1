@@ -14,6 +14,11 @@
     cursor: pointer;
   }
   
+  .app-title {
+    font-size: xx-large;
+    color: rgb(20, 74, 188);
+}
+
   .chip1 {
     display: inline-block;
     padding: 0 10px;
@@ -41,7 +46,7 @@
   
   .container {
     display: block;
-    border: solid rgb(33, 149, 243) 1px;
+    border: solid rgb(33, 149, 243) 2px;
     box-sizing: border-box;
     border-radius: 20px;
     width: 50%;
@@ -71,6 +76,7 @@
   .title {
     font-size: x-large;
     font-weight: bolder;
+    color: rgb(20, 74, 188);
   }
   
   .html-codigo, .css-codigo, .TS-codigo {
@@ -84,8 +90,9 @@
   .title-codigo {
     font-size: large;
     font-weight: bolder;
-    padding-left: 35px;
+    padding-left: 35px; 
     padding-top: 15px;
+    color: rgb(20, 74, 188);
   }
   
   code {
@@ -98,7 +105,7 @@
   
   .container-html, .container-css, .container-TS, .container-chip3{
     display: block;
-    border: solid rgb(33, 149, 243) 1px;
+    border: solid rgb(33, 149, 243) 2px;
     box-sizing: border-box;
     border-radius: 20px;
     width: 50%;
@@ -194,7 +201,7 @@
   
   .container-TS2{
     display: block;
-    border: solid rgb(33, 149, 243) 1px;
+    border: solid rgb(33, 149, 243) 2px;
     box-sizing: border-box;
     border-radius: 20px;
     width: 50%; /* Ajuste a largura conforme necessário */
@@ -207,7 +214,7 @@
   
   .container96 {    
     display: block;
-    border: solid rgb(33, 149, 243) 1px; 
+    border: solid rgb(33, 149, 243) 2px; 
     box-sizing: border-box; 
     border-radius: 20px;
     width: 80%;

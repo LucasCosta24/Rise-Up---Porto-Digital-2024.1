@@ -4,14 +4,16 @@
     padding: 20px 50px;
   } 
   
-  .app-title {
-    font-size: xx-large;
-  }
+.app-title {
+  font-size: xx-large;
+  color: rgb(20, 74, 188);
+}
   
-  .title {
-    font-size: x-large;
-    font-weight: bolder;
-  }
+.title {
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(20, 74, 188);
+}
   
   .content {
     padding-top: 25px;
@@ -22,17 +24,19 @@
     align-items: center;
     display: block;
     padding: auto;
-    border: solid rgb(33, 149, 243) 1px;
+    border: solid rgb(33, 149, 243) 2px;
     box-sizing: border-box;
     border-radius: 20px;
     width: 100%;
   }
+
   .table-example{
-  padding-left: 4rem;
+    padding-left: 4rem;
   }
+
   table {
-      width: 100%;
-    }
+    width: 100%;
+  }
   
     .html-codigo {
       align-items: center;
@@ -61,6 +65,7 @@
     font-weight: bolder;
     padding-left: 35px;
     padding-top: 15px;
+    color: rgb(20, 74, 188);
   }
   
   code {
@@ -68,7 +73,7 @@
   }
   
   .out-code{
-    background-color: plum;
+    background-color: rgb(251, 184, 53);
   }
     
     th {

@@ -4,7 +4,8 @@
   padding: 20px 50px;
 }
 .app-title {
-  font-size: xx-large;
+    font-size: xx-large;
+    color: rgb(20, 74, 188);
 }
 .content {
   padding-top: 25px;
@@ -12,7 +13,7 @@
 }
 .container {    
   display: block;
-  border: solid rgb(33, 149, 243) 1px;
+  border: solid rgb(33, 149, 243) 2px;
   box-sizing: border-box;
   border-radius: 20px;
   text-align: center;
@@ -22,7 +23,7 @@
 
 .container2 {
 display: block;
-border: solid rgb(33, 149, 243) 1px;
+border: solid rgb(33, 149, 243) 2px;
 box-sizing: border-box;
 border-radius: 20px;
 width: 70%;

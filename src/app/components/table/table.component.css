@@ -5,7 +5,8 @@
 } 
 
 .app-title {
-  font-size: xx-large;
+    font-size: xx-large;
+    color: rgb(20, 74, 188);
 }
 
 .title {
@@ -26,7 +27,7 @@
   align-items: center;
   display: block;
   padding: auto;
-  border: solid rgb(33, 149, 243) 1px;
+  border: solid rgb(33, 149, 243) 2px;
   box-sizing: border-box;
   border-radius: 20px;
   width: 80%;

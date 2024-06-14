@@ -74,5 +74,12 @@ h2 {
   word-wrap: break-word;
 }
 
+.app-title {
+  color: rgb(20, 74, 188);
+}
+
+.title {
+  color: rgb(20, 74, 188);
+}
 
 

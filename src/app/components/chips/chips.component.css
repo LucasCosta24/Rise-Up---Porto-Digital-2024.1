@@ -41,7 +41,7 @@
 
 .container {
   display: block;
-  border: solid rrb(33, 149, 243)33, 149, 243) 1px;
+  border: solid rgb(33, 149, 243) 1px;
   box-sizing: border-box;
   border-radius: 20px;
   width: 50%;
@@ -93,12 +93,12 @@ code {
 }
 
 .out-code {
-  background-color: plum;
+  background-color: rgb(251, 184, 53);
 }
 
-.container-html, .container-css, .container-TS, .container-chip3{
+.container-html, .container-css, .container-TS, .container-chip3 {
   display: block;
-  border: solid rrb(33, 149, 243)33, 149, 243) 1px;
+  border: solid rgb(33, 149, 243) 1px;
   box-sizing: border-box;
   border-radius: 20px;
   width: 50%;
@@ -208,7 +208,7 @@ code {
 
 .container-TS2{
   display: block;
-  border: solid rrb(33, 149, 243)33, 149, 243) 1px;
+  border: solid rgb(33, 149, 243) 1px;
   box-sizing: border-box;
   border-radius: 20px;
   width: 50%; /* Ajuste a largura conforme necessário */
@@ -221,7 +221,7 @@ code {
 
 .container96 {    
   display: block;
-  border: solid rrb(33, 149, 243)33, 149, 243) 1px; 
+  border: solid rgb(33, 149, 243) 1px; 
   box-sizing: border-box; 
   border-radius: 20px;
   width: 80%;
