@@ -28,6 +28,16 @@ export class ChipsComponent {
   @ViewChild('chipBlue') chipRefBlue: ElementRef | undefined;
   @ViewChild('chipPurple') chipRefPurple: ElementRef | undefined;
 
+  @ViewChild('chip7') chip7Ref: ElementRef | undefined;
+  chipList: { id: number, name: string }[] = [{ id: 1, name: 'Digite' }];
+
+
+
+
+
+
+
+
 
 
 
@@ -153,6 +163,33 @@ export class ChipsComponent {
         chipElement.style.display = 'none';
       }
     }
+
+
+    handleClickChip7(chip: { id: number, name: string }) {
+      const newName = prompt('Digite um novo nome para o chip:');
+      if (newName !== null && newName.trim() !== '') {
+        const limiteCaracteres = 12;
+        if (newName.trim().length > limiteCaracteres) {
+          alert(`Por favor, digite no máximo ${limiteCaracteres} caracteres.`);
+          return;
+        }
+        chip.name = newName.trim();
+      }
+    }
+  
+    handleCloseChip7(event: Event, chip: { id: number, name: string }) {
+      event.stopPropagation();
+      this.chipList = this.chipList.filter(c => c.id !== chip.id);
+    }
+  
+    addChip(event: Event) {
+      event.stopPropagation();
+      if (this.chipList.length < 5) {
+        const newId = this.chipList.length ? Math.max(...this.chipList.map(c => c.id)) + 1 : 1;
+        this.chipList.push({ id: newId, name: 'Digite' });
+      }
+    }
+
   }
 
 

@@ -30,7 +30,15 @@
   </div>
 
 
-
-
+<!-- Alterações -->
+<div *ngIf="type == 'chip7'">
+   <div *ngFor="let chip of chipList; let last = last" class="chip7" (click)="handleClickChip7(chip)">
+     <div class="chip14" #chip7>{{ chip.name }}</div>
+     <button class="closebtn-chip7" (click)="handleCloseChip7($event, chip)">&times;</button>
+   </div>
+   <!-- Botão para adicionar novo chip, sempre visível -->
+   <div class="add-chip" (click)="addChip($event)">+</div>
+ </div>
+ 
    
      
