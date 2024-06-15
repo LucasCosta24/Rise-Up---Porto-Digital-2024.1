@@ -160,36 +160,7 @@ code {
   color: #000;
 }
 
-.addChip {
-  display: inline-block;
-  padding: 0px 6px;
-  background-color: #ced1d6;
-  color: #000000;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
 
-/* Estilos para o modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
 
 .close {
   color: #aaa;
@@ -237,32 +208,28 @@ code {
 
 
 /* Estilo para novo chip4 */
-.chip4 {
+.chip44 {
   display: inline-flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
   height: 38px;
   font-size: 16px;
-  line-height: 32px;
-  border-radius: 16px;
+  line-height: 38px;
+  border-radius: 20px;
   border: 1px solid #fb9127;
   background-color: #ee8e11;
   color: #000000;
-  margin: 5px;
   position: relative;
-  border: none; /* Remove borda */
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  position: relative;
 }
 
-.chip13 {
-  display: inline-block;
-  height: 20px;
-  line-height: 32px;
-  margin-right: 10px; /* Adicionar espaço entre o texto e o botão de fechar */
-  border: 2px ;
-  border-color: 2px ;
-  border: 1px solid #ee8e11;
-  background-color: #ee8e11;
+.chip44:hover {
+  background-color: #ffb578;
 }
+
+
 
 .closebtn-chip4 {
   background-color: transparent;
@@ -277,3 +244,88 @@ code {
 .closebtn-chip4:hover {
   color: #000;
 }
+
+
+
+/* Estilo para chip5 (azul claro) */
+.chip5 {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 38px;
+  font-size: 16px;
+  line-height: 38px;
+  border-radius: 20px;
+  background-color: #024eff; /* Cor azul claro */
+  color: #000000;
+  position: relative;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  position: relative;
+
+}
+
+
+.chip5:hover {
+  background-color: #78acff;
+}
+
+.closebtn-chip5 {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.closebtn-chip5:hover {
+  color: #000;
+}
+
+/* Estilo para chip6 (roxo claro) */
+.chip6 {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+    border-radius: 20px;
+    background-color: #02b7ff; /* Cor roxo claro */
+    color: #000000;
+    position: relative;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    position: relative;
+
+  }
+
+
+.closebtn-chip6 {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.closebtn-chip6:hover {
+  color: #000;
+}
+
+.chip6:hover {
+  background-color: #7db9d1;
+}
+
+
+
+
+
+
+
+

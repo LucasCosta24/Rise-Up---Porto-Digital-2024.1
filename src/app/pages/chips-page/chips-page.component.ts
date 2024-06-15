@@ -91,6 +91,7 @@ codeForCSS : string =
 CodesForHTML1: string = `<app-chips type="chipstatic1"></app-chips>`;
 CodesForHTML2: string = `<app-chips type="chipstatic2"></app-chips>`;
 CodesForHTML3: string = `<app-chips type = "chip3"></app-chips>`;
+CodesForHTML4: string = `<app-chips type = "chip4"></app-chips>`;
 
 codeForHTML4 : string = 
 ` <div *ngIf="type == 'chip4'" class="chip4" (click)="handleClick4()">
