@@ -36,8 +36,11 @@ code{
   padding-bottom: 25px;
 }
 .cardsapps{
-  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
+
 .textt {
   margin: 10px;
   font-size: 12px;

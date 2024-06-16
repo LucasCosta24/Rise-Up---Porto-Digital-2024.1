@@ -34,7 +34,9 @@ export const routes: Routes = [
     { path: 'select', component: SelectPageComponent},
     { path: 'table', component: TablePageComponent},
     { path: 'expandinggrid', component: ExpandinggridPageComponent},
-    { path: '', component: DefaultPageComponent}
+    { path: '', component: DefaultPageComponent},
+
+
 ];
 
 @NgModule({

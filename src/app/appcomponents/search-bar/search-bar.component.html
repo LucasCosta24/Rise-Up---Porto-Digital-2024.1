@@ -1,0 +1,14 @@
+<div class="search-container">
+    <div class="search-btn">
+      <input class="search" type="search" placeholder="Procurar..." (input)="onSearchInput($event)" [(ngModel)]="searchTerm">
+    </div>
+    <div class="search-results" *ngIf="searchTerm">
+      <div 
+        class="search-result-item" 
+        *ngFor="let result of searchResults"
+        (click)="navigateToComponent(result)">
+        {{ result }}
+      </div>
+    </div>
+  </div>
+  

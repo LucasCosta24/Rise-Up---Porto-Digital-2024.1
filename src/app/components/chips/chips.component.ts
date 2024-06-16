@@ -18,11 +18,9 @@ import {MatButtonModule} from '@angular/material/button';
 
 export class ChipsComponent {
   @Input() type: string = "";
-  @Input() text1: string = "Chip um";
+  @Input() text: string = "";
   @Input('bg-color') bgColor: string = "#eba146";
-  @Input() text2: string = "Chip dois";
-  @Input('bg-color') bgColor1: string = "#839fc7";
- 
+  
   @ViewChild('chip') chipRef: ElementRef|undefined;
   @ViewChild('chip4') chipRef4: ElementRef | undefined;
   @ViewChild('chipBlue') chipRefBlue: ElementRef | undefined;
@@ -30,15 +28,6 @@ export class ChipsComponent {
 
   @ViewChild('chip7') chip7Ref: ElementRef | undefined;
   chipList: { id: number, name: string }[] = [{ id: 1, name: 'Digite' }];
-
-
-
-
-
-
-
-
-
 
 
   handleClick() {
