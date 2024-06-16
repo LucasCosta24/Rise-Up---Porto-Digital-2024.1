@@ -21,10 +21,11 @@
   .search-results {
     position: absolute;
     top: 40px; /* Ajuste conforme necessário */
-    width: 100%;
+    width: 172px;
     border: 1px solid #ccc;
     background-color: #fff;
     z-index: 1000;
+    border-radius: 8px;
   }
   
   .search-result-item {

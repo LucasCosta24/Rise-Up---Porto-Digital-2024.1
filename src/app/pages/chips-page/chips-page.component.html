@@ -1,51 +1,55 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  
+
   <div class="app-component-viewer">
         <div class="content">
             <h1 class="app-title">Chip:</h1>
             <p>
-                Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação. 
-                Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar 
+                Em HTML, o termo "chip" se refere a um elemento de interface gráfica de usuário (UI) que representa uma peça compacta de informação.
+                Chips podem conter uma variedade de conteúdo, como texto, ícones, ou fotos, e geralmente são usados para representar
                 entradas de usuário, tais como seleções, contatos, ou filtros.
             </p>
         </div>
-        
+
         <div class="content">
             <div class="title">Chip Estático</div>
         </div>
-      
+
         <div class="container">
             <div class="contenti">
                <app-chips type="chipstatic" text="Chip um" ></app-chips>
                 <app-chips type="chipstatic" text="Chip dois" bg-color ="#839fc7" ></app-chips>
             </div>
         </div>
-        
+
         <div class="content">
             <p>
-                Se refere a um tipo de chip que exibe informações estáticas e não interativas. 
-                Esses chips podem ser úteis para mostrar informações que não precisam de 
+                Se refere a um tipo de chip que exibe informações estáticas e não interativas.
+                Esses chips podem ser úteis para mostrar informações que não precisam de
                 interação do usuário, como tags ou rótulos.
             </p>
-        </div>
+        
 
+<details>
+    <summary class="Summary">Ver Código</summary>
         <div class="html-code">
-            <h2 class="title">Código Seletor Para Angular:</h2>
-            <pre class="pre">
-                <code class="code"
-                      [highlight]="CodesForHTML1"
-                      language="html"
-                      lineNumbers></code>
-              </pre> 
-              <pre class="pre">
-                <code class="code"
-                      [highlight]="CodesForHTML2"
-                      language="html"
-                      lineNumbers></code>
-              </pre>
+            <h2 class="title-codigo">Código Seletor Para Angular:</h2>
+                <pre class="pre">
+                    <code class="code"
+                          [highlight]="CodesForHTML1"
+                          language="html"
+                          lineNumbers></code>
+                </pre> 
+                <pre class="pre">
+                    <code class="code"
+                          [highlight]="CodesForHTML2"
+                          language="html"
+                          lineNumbers></code>
+                </pre>
         </div>
-      
+        
+
+
         <div class="title-codigo">HTML:</div><br>
 <span class="container96" style="background-color: #282b2e;">
 <pre class="pre">
@@ -55,9 +59,9 @@
           lineNumbers></code>
   </pre>
 </span>
-      
-        <br><br>     
-      
+
+        <br><br>
+
         <div class="title-codigo">CSS:</div><br>
         <span class="container96" style="background-color: #282b2e;">
         <pre class="pre">
@@ -67,9 +71,9 @@
                   lineNumbers></code>
           </pre>
         </span>
-          
-        <br><br>  
-      
+
+        <br><br>
+
         <div class="title-codigo">TS:</div><br>
         <span class="container96" style="background-color: #282b2e;">
         <pre class="pre">
@@ -79,7 +83,8 @@
                   lineNumbers></code>
           </pre>
         </span>
-      
+</details>
+
         <br><br>
 
         <div class="title">Chip Modificável</div>
@@ -91,14 +96,16 @@
             <app-chips type = "chip3"></app-chips>
           </div>
       </span>
-      
+
 
             <p>
                 Se refere a um tipo de chip que exibe informações Modificáveis. Diferente do anterior, esse chip pode ser alterado pelo<br>
                 usuário de forma dinâmica.<br>
-                
+
             </p>
-        
+ 
+<details>
+        <summary class="Summary">Ver Código</summary>
             <div class="html-code">
                 <h2 class="title">Código Seletor Para Angular:</h2>
                 <pre class="pre">
@@ -108,7 +115,7 @@
                           lineNumbers></code>
                   </pre>
             </div>
-       
+
             <div class="title-codigo">HTML:</div><br>
             <span class="container96" style="background-color: #282b2e;">
             <pre class="pre">
@@ -118,7 +125,7 @@
                       lineNumbers></code>
               </pre>
             </span>
-          
+
 <br><br>
             <div class="title-codigo">CSS:</div><br>
             <span class="container96" style="background-color: #282b2e;">
@@ -139,9 +146,9 @@
                     lineNumbers></code>
             </pre>
             </span>
+</details>
+<br><br><br>
 
-<br><br>
-  
 
             <div class="title">Chip Excluível</div>
 
@@ -154,13 +161,14 @@
                     <app-chips type = "chipPurple"></app-chips>
                 </div>
             </span>
-            
-      
+
+
                   <p>
                      Nada mais é que um chip que pode ser excluído.<br>
                   </p>
-            
 
+    <details>
+        <summary class="Summary">Ver Código</summary>
                   <div class="html-code">
                     <h2 class="title">Código Seletor Para Angular:</h2>
                     <pre class="pre">
@@ -203,8 +211,11 @@
                     lineNumbers></code>
             </pre>
             </span>
+    </details>        
 
-<br><br>   
+<br><br><br>
+
+
             <div class="title">Criador de Chips</div>
             <br>
 
@@ -218,7 +229,8 @@
                Esse chip possui as funcionalidades dos outros chips. Porém esse vem com o  diferencial de criar novos chips. <br>
             </p>
 
-
+<details>
+    <summary class="Summary">Ver Código</summary>
      <div class="html-code">
                     <h2 class="title">Código Seletor Para Angular:</h2>
                     <pre class="pre">
@@ -228,7 +240,7 @@
                               lineNumbers></code>
                       </pre>
                 </div>
-    
+
                 <div class="title-codigo">HTML:</div><br>
                 <span class="container96" style="background-color: #282b2e;">
                 <pre class="pre">
@@ -260,12 +272,12 @@
                     lineNumbers></code>
             </pre>
             </span>
+</details>
 
-            
             <br><br>
             <div class="ampulheta">
             <i class="fas fa-hourglass search-icon"></i>
-            <div class="title2">Novos chips serão adicionados futuramente.</div>
+            <div class="title3">Novos chips serão adicionados futuramente.</div>
             </div>
 
             <br>

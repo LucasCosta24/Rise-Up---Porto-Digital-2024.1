@@ -18,8 +18,8 @@ export class SearchBarComponent {
     "Button",
     "Card",
     "Expandinggrid",
-    "Inputbutton",
-    "Inputtext",
+    "Button-input",
+    "Text-input",
     "Select",
     "Table"
   ];

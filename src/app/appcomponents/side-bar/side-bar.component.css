@@ -1,38 +1,61 @@
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #ffffff;
-    position: fixed;
-    height: 100%;
-    z-index: 1;
-    overflow: auto;
-    border-right: solid rgb(33, 149, 243);
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+  overflow: auto;
+  border-right: solid rgb(33, 149, 243);
+}
 
-  /* Sidebar links */
-  .sidebar button {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    width: 100%;
-    border: none;
-    text-align: left;
-    font-size: 15px;
-    background-color: #ffffff;
-    border-radius: 20px;
-  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .sidebar button:hover {
-    background-color: rgb(33, 149, 243);
-    cursor: pointer;
-    color: white;
-  }
+/* Sidebar links */
+.sidebar button {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  outline: none;
+  transition: color 0.3s ease, font-weight 0.3s ease; /* Transição suave para a cor e o peso da fonte */
+}
+
+.sidebar button:hover {
+  color: rgb(255, 170, 0); /* Texto laranja */
+  font-weight: bold; /* Texto em negrito */
+  background-color: #ffffff; /* Fundo branco */
+}
+
+.sidebar button:focus {
+  color: rgb(255, 170, 0); /* Texto laranja */
+  font-weight: bold; /* Texto em negrito */
+  background-color: #ffffff; /* Fundo branco */
+  outline: none;
+}
+
+.sidebar button:hover {
+  color: rgb(255, 170, 0); /* Texto laranja */
+  background-color: #ffffff; /* Fundo branco */
+}
+
+.sidebar button:focus {
+  color: rgb(255, 170, 0); /* Texto laranja */
+  background-color: #ffffff; /* Fundo branco */
+  outline: none;
+}
+
+
+
 
