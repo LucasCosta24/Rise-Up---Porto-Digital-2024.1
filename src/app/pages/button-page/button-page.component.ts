@@ -15,11 +15,11 @@ export class ButtonComponentPage {
   @Input() longText: string = "Conteúdo do button";
   call1: string = `<app-button type = "simples"></app-button>`
 
-  call2: string = `<app-button type = "fino"></app-button>`
+  call2: string = `<app-button type = "Fino"></app-button>`
 
-  call3: string = `<app-button type = "disabled"></app-button>`
+  call3: string = `<app-button type = "Desativado"></app-button>`
 
-  call4: string = `<app-button type = "link"></app-button>`
+  call4: string = `<app-button type = "Link"></app-button>`
 
 
 
