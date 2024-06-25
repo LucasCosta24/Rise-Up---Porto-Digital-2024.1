@@ -1,6 +1,5 @@
 # Descrição
-
-Em colaboração com a Ustore, criamos uma biblioteca de componentes reutilizáveis para a framework Angular, utilizando HTML, CSS e TypeScript.O projeto foi apresentado no Demoday de 2024.1 para as empresas do Porto Digital.
+Em parceria com a Ustore, desenvolvemos uma biblioteca de componentes reutilizáveis para a framework Angular, utilizando HTML, CSS e TypeScript.O projeto foi apresentado no Rise Up e selecionado para o Demoday de 2024.1, onde foi demonstrado para as empresas do Porto Digital.
 
 # ComponentLibrary
 
