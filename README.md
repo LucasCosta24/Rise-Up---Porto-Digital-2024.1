@@ -1,3 +1,7 @@
+# Descrição
+
+Em colaboração com a Ustore, criamos uma biblioteca de componentes reutilizáveis para a framework Angular, utilizando HTML, CSS e TypeScript.O projeto foi apresentado no Demoday de 2024.1 para as empresas do Porto Digital.
+
 # ComponentLibrary
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
@@ -25,3 +29,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
